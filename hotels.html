@@ -31,7 +31,55 @@
       <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
       <section>
         <h2 class="visually-hidden">Фильтр для поска гостиницы</h2>
-        <!--  Форма-->
+        <form action="get">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="pool" checked>
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="wi-fi">
+                <label for="wi-fi">wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartments" id="apartments" checked>
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки (Р):</legend>
+            <ul>
+              <li>
+                <span>от 0</span>
+              </li>
+              <li>
+                <span>До 3000</span>
+              </li>
+            </ul>
+            <input type="range">
+            <button type="button">Показать</button>
+          </fieldset>
+        </form>
       </section>
       <section>
         <h2 class="visually-hidden">Результат поиска гостиницы</h2>
