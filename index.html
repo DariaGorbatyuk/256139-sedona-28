@@ -86,9 +86,36 @@
       <h2 class="visually-hidden">Поиск лучших предложений</h2>
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button type="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
-      <!--  Тут форма-->
-      <a href="#" class="btn">НАЙТИ</a>
+      <button type="button">Поиск гостиницы в Седоне</button>
+      <form action="post">
+        <label for="checkIn">Дата заезда:</label>
+        <input type="date" name="checkIn" id="checkIn">
+        <label for="checkOut">Дата выезда:</label>
+        <input type="date" name="checkOut" id="checkOut">
+        <label for="groupAdults">Взрослые:</label>
+        <div>
+          <input type="range" name="groupAdults" id="groupAdults" min="1" step="1" value="2">
+          <button type="button">
+            <span>-</span>
+          </button>
+          <span>2</span>
+          <button type="button">
+            <span>+</span>
+          </button>
+        </div>
+        <label for="groupChildren">Дети:</label>
+        <div>
+          <input type="range" name="groupChildren" id="groupChildren" min="0" step="1" value="0">
+          <button type="button">
+            <span>-</span>
+          </button>
+          <span>0</span>
+          <button type="button">
+            <span>+</span>
+          </button>
+        </div>
+        <a href="#" class="btn">Найти</a>
+      </form>
     </section>
   </main>
   <footer>
