@@ -96,30 +96,32 @@
           <label for="search-checkOut">Дата выезда:</label>
           <input id="search-checkOut" type="text" name="checkOut" placeholder="4 июля 2017">
         </div>
-        <div>
-          <label class="search-groupAdults">
-            Взрослые:
-            <button type="button">
-              <span>Уменьшить</span>
-            </button>
-            <input id="search-groupAdults" type="text" name="groupAdults" value="2">
-            <button type="button">
-              <span>Увеличить</span>
-            </button>
-          </label>
-        </div>
-        <div>
-          <label class="search-groupChildren">
-            Дети:
-            <button type="button">
-              <span>Уменьшить</span>
-            </button>
-            <input id="search-groupChildren" type="text" name="groupChildren" value="0">
-            <button type="button">
-              <span>Увеличить</span>
-            </button>
-          </label>
-        </div>
+        <ul aria-label="Количество человек">
+          <li>
+            <label class="search-groupAdults">
+              Взрослые:
+              <button type="button" aria-label="Уменьшить">
+<!--                <svg></svg>-->
+              </button>
+              <input id="search-groupAdults" type="text" name="groupAdults" value="2">
+              <button type="button" aria-label="Увеличить">
+<!--                <svg></svg>-->
+              </button>
+            </label>
+          </li>
+          <li>
+            <label class="search-groupChildren">
+              Дети:
+              <button type="button" aria-label="Уменьшить">
+<!--                <svg></svg>-->
+              </button>
+              <input id="search-groupChildren" type="text" name="groupChildren" value="0">
+              <button type="button" aria-label="Увеличить">
+<!--                <svg></svg>-->
+              </button>
+            </label>
+          </li>
+        </ul>
         <button type="submit">Найти</button>
       </form>
     </section>
