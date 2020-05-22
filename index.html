@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns:https="http://www.w3.org/1999/xhtml">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
@@ -87,11 +87,13 @@
       <p>Заинтересовались?</p>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <button type="button">Поиск гостиницы в Седоне</button>
-      <form action="post">
-        <label for="checkIn">Дата заезда:</label>
-        <input type="date" name="checkIn" id="checkIn">
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <div>
+          <label for="checkIn">Дата заезда:</label>
+          <input id="checkIn" type="text" name="checkIn" placeholder="24 апреля 2017">
+        </div>
         <label for="checkOut">Дата выезда:</label>
-        <input type="date" name="checkOut" id="checkOut">
+        <input id="checkOut" type="date" name="checkOut">
         <label for="groupAdults">Взрослые:</label>
         <div>
           <input type="range" name="groupAdults" id="groupAdults" min="1" step="1" value="2">
@@ -105,7 +107,7 @@
         </div>
         <label for="groupChildren">Дети:</label>
         <div>
-          <input type="range" name="groupChildren" id="groupChildren" min="0" step="1" value="0">
+          <input id="groupChildren" type="range" name="groupChildren" min="0" step="1" value="0">
           <button type="button">
             <span>-</span>
           </button>
