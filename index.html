@@ -89,36 +89,36 @@
       <button type="button">Поиск гостиницы в Седоне</button>
       <form action="https://echo.htmlacademy.ru" method="get">
         <div>
-          <label for="checkIn">Дата заезда:</label>
-          <input id="checkIn" type="text" name="checkIn" placeholder="24 апреля 2017">
+          <label for="search-checkIn">Дата заезда:</label>
+          <input id="search-checkIn" type="text" name="checkIn" placeholder="24 апреля 2017">
         </div>
         <div>
-          <label for="checkOut">Дата выезда:</label>
-          <input id="checkOut" type="text" name="checkOut" placeholder="4 июля 2017">
+          <label for="search-checkOut">Дата выезда:</label>
+          <input id="search-checkOut" type="text" name="checkOut" placeholder="4 июля 2017">
         </div>
         <div>
-          <label for="groupAdults">Взрослые:</label>
-          <div>
+          <label class="search-groupAdults">
+            Взрослые:
             <button type="button">
               <span>Уменьшить</span>
             </button>
-            <input id="groupAdults" type="text" name="groupAdults" value="2">
+            <input id="search-groupAdults" type="text" name="groupAdults" value="2">
             <button type="button">
               <span>Увеличить</span>
             </button>
-          </div>
+          </label>
         </div>
         <div>
-          <label for="groupChildren">Дети:</label>
-          <div>
+          <label class="search-groupChildren">
+            Дети:
             <button type="button">
               <span>Уменьшить</span>
             </button>
-            <input id="groupChildren" type="text" name="groupChildren" value="0">
+            <input id="search-groupChildren" type="text" name="groupChildren" value="0">
             <button type="button">
               <span>Увеличить</span>
             </button>
-          </div>
+          </label>
         </div>
         <button type="submit">Найти</button>
       </form>
