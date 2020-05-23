@@ -69,10 +69,10 @@
         <fieldset>
           <legend>Стоимость в сутки (Р):</legend>
           <label class="filter-price-min">
-            От <input id="filter-price-min" type="text" name="filter-price-min" value="0">
+            От <input id="filter-price-min" type="text" name="filter-price-min" value="0" pattern="[0-9]+$" required>
           </label>
           <label class="filter-price-max">
-            До <input id="filter-price-max" type="text" name="filter-price-max" value="3000">
+            До <input id="filter-price-max" type="text" name="filter-price-max" value="3000" pattern="[0-9]+$" required>
           </label>
           <div>
             <!--            Сдесь стилями должен быть задан ползунок-->

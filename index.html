@@ -90,11 +90,11 @@
       <form action="https://echo.htmlacademy.ru" method="get">
         <div>
           <label for="search-checkIn">Дата заезда:</label>
-          <input id="search-checkIn" type="text" name="checkIn" placeholder="24 апреля 2017">
+          <input id="search-checkIn" type="text" name="checkIn" placeholder="24 апреля 2017" required>
         </div>
         <div>
           <label for="search-checkOut">Дата выезда:</label>
-          <input id="search-checkOut" type="text" name="checkOut" placeholder="4 июля 2017">
+          <input id="search-checkOut" type="text" name="checkOut" placeholder="4 июля 2017" required>
         </div>
         <ul aria-label="Количество человек">
           <li>
@@ -103,7 +103,7 @@
               <button type="button" aria-label="Уменьшить">
 <!--                <svg></svg>-->
               </button>
-              <input id="search-groupAdults" type="text" name="groupAdults" value="2">
+              <input id="search-groupAdults" type="text" name="groupAdults" value="2" pattern="[0-9]{,3}" required>
               <button type="button" aria-label="Увеличить">
 <!--                <svg></svg>-->
               </button>
@@ -115,7 +115,7 @@
               <button type="button" aria-label="Уменьшить">
 <!--                <svg></svg>-->
               </button>
-              <input id="search-groupChildren" type="text" name="groupChildren" value="0">
+              <input id="search-groupChildren" type="text" name="groupChildren" value="0" pattern="[0-9]{,3}" required>
               <button type="button" aria-label="Увеличить">
 <!--                <svg></svg>-->
               </button>
