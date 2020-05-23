@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" >
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
@@ -96,32 +96,30 @@
           <label for="search-checkOut">Дата выезда:</label>
           <input id="search-checkOut" type="text" name="checkOut" placeholder="4 июля 2017" required>
         </div>
-        <ul aria-label="Количество человек">
-          <li>
-            <label class="search-groupAdults">
-              Взрослые:
-              <button type="button" aria-label="Уменьшить">
-<!--                <svg></svg>-->
-              </button>
-              <input id="search-groupAdults" type="text" name="groupAdults" value="2" pattern="[0-9]{,3}" required>
-              <button type="button" aria-label="Увеличить">
-<!--                <svg></svg>-->
-              </button>
-            </label>
-          </li>
-          <li>
-            <label class="search-groupChildren">
-              Дети:
-              <button type="button" aria-label="Уменьшить">
-<!--                <svg></svg>-->
-              </button>
-              <input id="search-groupChildren" type="text" name="groupChildren" value="0" pattern="[0-9]{,3}" required>
-              <button type="button" aria-label="Увеличить">
-<!--                <svg></svg>-->
-              </button>
-            </label>
-          </li>
-        </ul>
+        <div>
+          <label class="search-groupAdults">Взрослые:</label>
+          <div>
+            <button type="button" aria-label="Уменьшить">
+              <!--                <svg></svg>-->
+            </button>
+            <input id="search-groupAdults" type="text" name="groupAdults" value="2" pattern="[0-9]{,3}" required>
+            <button type="button" aria-label="Увеличить">
+              <!--                <svg></svg>-->
+            </button>
+          </div>
+        </div>
+        <div>
+          <label class="search-groupChildren">Дети:</label>
+          <div>
+            <button type="button" aria-label="Уменьшить">
+              <!--                <svg></svg>-->
+            </button>
+            <input id="search-groupChildren" type="text" name="groupChildren" value="0" pattern="[0-9]{,3}" required>
+            <button type="button" aria-label="Увеличить">
+              <!--                <svg></svg>-->
+            </button>
+          </div>
+        </div>
         <button type="submit">Найти</button>
       </form>
     </section>
