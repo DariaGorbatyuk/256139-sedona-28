@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "PT Sans";
+  src: local("PT Sans"),
+       url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans Bold";
+  src: local("PT Sans Bold"),
+       url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+/*variables*/
+:root{
+  --background-white: #FFFFFF;
+  --background-grey: #F2F2F2;
+  --light-blue: #81B3D2;
+  --light-grey: #EEEEEE;
+  --brown-grey: #766357;
+  --grey-black-text: #333333;
+  --black: #000000;
+  --background-mountains: #766458;
+  --background-city: #F49774;
+  --background-bridge: #DC6243;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body{
+  min-width: 1280px;
+  padding: 0 10px 0;
+  font-family: "PT Sans", Arial, sans-serif ;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--grey-black-text,black);
+  text-transform: uppercase;
+  background-color: var(--background-white);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.wrapper-back{
+  width: 1280px;
+  background-color: var(--background-grey);
+  margin: 0 auto;
+}
+.content{
+  width: 1200px;
+  background-color: var(--background-white);
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  margin: 0 auto;
+}
+/*header*/
+.menu{
+  list-style: none;
+}
+.menu__item > a{
+  color: var(--black, black);
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  line-height: 26px;
+}
+/*main*/
+/*greeting*/
+.greeting__img{
+  height: 510px;
+  background-color: var(--background-mountains);
+  background-image: url("../img/mountains.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.greeting__text{
+  width: 470px;
+  text-align: center;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+}
+
