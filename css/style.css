@@ -215,35 +215,35 @@ a {
   height: 48px;
   background-color: var(--light-blue);
 }
-
+.social::before{
+  content: "";
+  display: block;
+}
+.social__tw::before{
+  background-image: url("../img/twitter-icon.svg");
+  width: 17px;
+  height: 17px;
+}
+.social__fc::before {
+  background-image: url("../img/fb-icon.svg");
+  width: 12px;
+  height: 22px;
+}
+.social__ut::before{
+  background-image: url("../img/youtube-icon.svg");
+  width: 20px;
+  height: 16px;
+}
 .social:hover,
 .social:focus {
   background-color: var(--socials-hover);
 }
-
-.social::before {
-  content: "";
-  position: absolute;
-  display: block;
+.social:active{
+  background-color: var(--socials-active);
 }
-.social__tw::before {
-  background-image: url("../img/twitter-icon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.social:active::before{
+  opacity: 0.3;
 }
-
-.social__fc::before {
-  background-image: url("../img/fb-icon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.social__ut::before {
-  background-image: url("../img/youtube-icon.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .site-footer__developer {
   line-height: 26px;
 }
@@ -281,4 +281,54 @@ a {
 .filter-result-hotels__item {
   border: 1px solid var(--grey-line);
 }
-
+.hotel__img{
+  width: 135px;
+  height: 90px;
+  display: block;
+  background-color: var(--background-grey);
+}
+.hotel__title{
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+}
+.hotel__btn{
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  color: var(--background-white);
+}
+.hotel__btn.details{
+  background-color: var(--light-blue);
+}
+.hotel__btn.details:hover,
+.hotel__btn.details:focus{
+  background-color: var(--socials-hover);
+}
+.hotel__btn.details:active{
+  background-color: var(--socials-active);
+  color: rgba(var(--white-opacity), 0.3);
+}
+.hotel__btn.check-in{
+  background-color: var(--brown-grey);
+}
+.hotel__btn.check-in:hover,
+.hotel__btn.check-in:focus{
+  background-color: var(--btn-hover);
+}
+.hotel__btn.check-in:active{
+  background-color: var(--btn-active);
+  color: rgba(var(--white-opacity), 0.3);
+}
+.hotels__stars{
+  list-style: none;
+}
+.hotels__stars > li::before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url("../img/star.svg");
+  width: 19px;
+  height: 17px;
+}
+.hotels__rating{
+  background-color: var(--background-grey);
+}
