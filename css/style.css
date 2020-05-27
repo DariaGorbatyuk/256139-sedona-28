@@ -17,8 +17,14 @@
 /*variables*/
 :root{
   --background-white: #FFFFFF;
+  --background-white-opacity: rgba(255, 255, 255, 0.9);
   --background-grey: #F2F2F2;
   --light-blue: #81B3D2;
+  --blue-hover: #086cab;
+  --btn-active: #615148;
+  --socials-hover: #83a0b3;
+  --socials-graphite: #62717b;
+  --violet: rgba(42, 50, 109, 0.95);
   --light-grey: #EEEEEE;
   --brown-grey: #766357;
   --grey-black-text: #333333;
@@ -74,10 +80,17 @@ a {
 .menu{
   list-style: none;
 }
-.menu__item > a{
+.menu__link{
   color: var(--black, black);
   font-family: "PT Sans Bold", Arial, sans-serif;
   line-height: 26px;
+}
+.menu__link:hover,
+.menu__link:focus{
+  color: var(--blue-hover);
+}
+.menu__link:active{
+  color: var(--violet);
 }
 /*main*/
 /*greeting*/
@@ -95,4 +108,102 @@ a {
   font-size: 21px;
   line-height: 26px;
 }
-
+/*search*/
+.search-hotels{
+  text-align: center;
+}
+.search-hotels__heading{
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  color: var(--black);
+  font-size: 30px;
+  line-height: 24px;
+}
+.search-hotels__subtitle{
+  line-height: 24px;
+  width: 435px;
+}
+.search-hotels__btn{
+  width: 568px;
+  height: 86px;
+  padding: 0;
+  background-color: var(--brown-grey);
+  color: var(--background-white,white);
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.search-hotels__btn:hover,
+.search-hotels__btn:focus{
+  box-shadow: 0 2px 2px 2px var(--brown-grey);
+}
+.search-hotels__btn:active{
+  background-color: var(--btn-active);
+}
+.form-search{
+  display: none;
+}
+/*footer*/
+.site-footer.map{
+  height: 594px;
+  background-color: var(--light-grey);
+  background-image: url("../img/map.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.site-footer__content{
+  height: 120px;
+  background-color: var(--background-white-opacity)
+}
+.site-footer__contacts{
+  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--black,black);
+}
+.site-footer__contacts > a{
+  color: var(--black,black);
+}
+.site-footer__contacts > a:hover,
+.site-footer__contacts > a:focus{
+  color: var(--blue-hover);
+}
+.site-footer__contacts > a:active{
+  color: var(--violet);
+}
+.socials{
+  list-style: none;
+}
+.social{
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background-color: var(--light-blue);
+}
+.social:hover,
+.social:focus{
+  background-color: var(--socials-hover);
+}
+.social:active{
+ background-color: var(--socials-graphite);
+}
+.social__tw{
+  background-image: url("../img/twitter-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social__fc{
+  background-image: url("../img/fb-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social__ut{
+  background-image: url("../img/youtube-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.site-footer__copy{
+  line-height: 26px;
+}

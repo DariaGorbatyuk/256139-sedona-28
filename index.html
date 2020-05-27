@@ -15,17 +15,17 @@
           <img src="./img/logo.svg" alt="Логотип" width="138" height="70">
         </a>
         <ul class="menu">
-          <li class="menu__item">
-            <a href="blank.html">Информация</a>
+          <li>
+            <a class="menu__link" href="blank.html">Информация</a>
           </li>
-          <li class="menu__item">
-            <a href="blank.html">Фото и видео</a>
+          <li>
+            <a class="menu__link" href="blank.html">Фото и видео</a>
           </li>
-          <li class="menu__item">
-            <a href="blank.html">Карта штата</a>
+          <li>
+            <a class="menu__link" href="blank.html">Карта штата</a>
           </li>
-          <li class="menu__item">
-            <a href="hotels.html">Гостиницы</a>
+          <li>
+            <a class="menu__link" href="hotels.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -87,12 +87,12 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="search-hotels">
         <h2 class="visually-hidden">Поиск лучших предложений</h2>
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">Поиск гостиницы в Седоне</button>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <p class="search-hotels__heading">Заинтересовались?</p>
+        <p class="search-hotels__subtitle">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="search-hotels__btn" type="button">Поиск гостиницы в Седоне</button>
+        <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
           <div>
             <label for="search-checkIn">Дата заезда:</label>
             <input id="search-checkIn" type="text" name="checkIn" placeholder="24 апреля 2017" required>
@@ -131,28 +131,28 @@
         </form>
       </section>
     </main>
-    <footer>
-      <div>
-        <section>
+    <footer class="site-footer map">
+      <div class="site-footer__content">
+        <section class="site-footer__contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <p>#visitSEDONA</p>
           <a href="tel:+79456660166">ТЕЛ: +7(495) 666-01-66</a>
         </section>
-        <section>
+        <section class="site-footer__socials">
           <h2 class="visually-hidden">Социальные сети</h2>
-          <ul>
+          <ul class="socials">
             <li>
-              <a href="blank.html">Твиттер</a>
+              <a class="social social__tw" href="blank.html" aria-label="Твиттер"></a>
             </li>
             <li>
-              <a href="blank.html">Фэйсбук</a>
+              <a class="social social__fc" href="blank.html" aria-label="Фэйсбук"></a>
             </li>
             <li>
-              <a href="blank.html">Ютуб</a>
+              <a class="social social__ut" href="blank.html" aria-label="Ютуб"></a>
             </li>
           </ul>
         </section>
-        <p>
+        <p class="site-footer__copy">
           Website by
           <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на базовый интенсив HTML Академии">
             <img src="./img/logo-htmlacademy.svg" alt="Лого html академии">
