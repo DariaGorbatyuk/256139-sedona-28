@@ -171,6 +171,11 @@ a {
 }
 
 /*footer*/
+.site-footer {
+  height: 120px;
+  background-color: var(--background-white);
+}
+
 .site-footer.map {
   height: 594px;
   background-color: var(--light-grey);
