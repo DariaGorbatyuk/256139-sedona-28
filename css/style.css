@@ -131,7 +131,12 @@ a {
   font-weight: normal;
   line-height: 26px;
 }
+.advantages__item{
+  list-style: none;
+}
+.advantages__item:first-child{
 
+}
 /*search*/
 .search-hotels {
   text-align: center;
