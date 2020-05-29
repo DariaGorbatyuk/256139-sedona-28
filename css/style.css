@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans Bold";
+  font-family: "PT Sans";
   src: local("PT Sans Bold"),
   url("../fonts/ptsansbold.woff2") format("woff2"),
   url("../fonts/ptsansbold.woff") format("woff");
@@ -95,7 +95,7 @@ a {
 
 .menu__link {
   color: var(--black, black);
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
   line-height: 26px;
 }
 
@@ -121,8 +121,13 @@ a {
 .greeting__text {
   width: 470px;
   text-align: center;
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
   font-size: 21px;
+  line-height: 26px;
+}
+/*advantages*/
+.advantages__heading{
+  font-weight: normal;
   line-height: 26px;
 }
 
@@ -132,13 +137,14 @@ a {
 }
 
 .search-hotels__heading {
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
   color: var(--black);
   font-size: 30px;
   line-height: 24px;
 }
 
 .search-hotels__subtitle {
+  font-weight: normal;
   line-height: 24px;
   width: 435px;
 }
@@ -149,7 +155,7 @@ a {
   padding: 0;
   background-color: var(--brown-grey);
   color: var(--background-white, white);
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
@@ -191,7 +197,7 @@ a {
 }
 
 .site-footer__contacts {
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--black, black);
@@ -258,6 +264,7 @@ a {
 }
 
 .site-footer__developer {
+  font-weight: normal;
   line-height: 26px;
 }
 
@@ -303,13 +310,18 @@ a {
 }
 
 .hotel__title {
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
-
+.hotel__type{
+  font-weight: normal;
+}
+.hotel__price{
+  font-weight: normal;
+}
 .hotel__btn {
-  font-family: "PT Sans Bold", Arial, sans-serif;
+  font-weight: bold;
   color: var(--background-white);
 }
 
