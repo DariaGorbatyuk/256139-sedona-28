@@ -120,22 +120,74 @@ a {
 
 .greeting__text {
   width: 470px;
-  color: var(--black,black);
+  color: var(--black, black);
   text-align: center;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
+
 /*advantages*/
-.advantages__heading{
+.advantages__heading {
   font-weight: normal;
   line-height: 26px;
 }
-.advantages__item{
+
+.advantages__item {
   list-style: none;
 }
-.advantages__item:first-child{
 
+.advantages-item__heading {
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--black, black);
+}
+
+.advantages-item__number {
+  font-weight: normal;
+}
+
+.advantages-item__text {
+  font-weight: normal;
+}
+.white{
+  color: var(--background-white, white);
+}
+.advantages-item__content{
+  width: 400px;
+  height: 256px;
+  background-color: var(--light-blue, lightblue);
+}
+.features__item{
+  list-style: none;
+}
+.features__item::before{
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+}
+.features__item:first-child::before{
+  background-image: url("../img/icon-home.svg");
+  width: 75px;
+  height: 72px;
+}
+.features__item:nth-child(2)::before{
+  background-image: url("../img/icon-food.svg");
+  width: 75px;
+  height: 70px;
+}
+.features__item:last-child::before{
+  background-image: url("../img/icon-present.svg");
+  width: 64px;
+  height: 77px;
+}
+.features__heading{
+  font-weight: bold;
+  font-size: 21px;
+  color: var(--black, black);
+}
+.features__text{
+  font-weight: normal;
 }
 /*search*/
 .search-hotels {
@@ -320,12 +372,15 @@ a {
   line-height: 26px;
   color: var(--black, black);
 }
-.hotel__type{
+
+.hotel__type {
   font-weight: normal;
 }
-.hotel__price{
+
+.hotel__price {
   font-weight: normal;
 }
+
 .hotel__btn {
   font-weight: bold;
   color: var(--background-white);
