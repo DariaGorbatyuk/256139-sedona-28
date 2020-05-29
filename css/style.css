@@ -402,7 +402,14 @@ a {
   height: 23px;
 }
 
-/*Не сделано disabled//////////////////////////*/
+.filter__check:disabled + .filter__check-label:before {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.filter__check:checked:disabled + .filter__check-label:before {
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
+
 .filer-price__input {
   background-color: transparent;
   color: var(--background-white)
