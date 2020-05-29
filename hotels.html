@@ -34,79 +34,82 @@
       <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
       <section>
         <h2 class="visually-hidden">Фильтр для поска гостиницы</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="filter-infrastructure">
             <legend>Инфраструктура:</legend>
-            <ul>
-              <li>
-                <input id="filter-pool" type="checkbox" name="pool" checked>
-                <label for="filter-pool">Бассейн</label>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="filter__check" id="filter-pool" type="checkbox" name="pool" checked>
+                <label class="filter__check-label" for="filter-pool">Бассейн</label>
               </li>
-              <li>
-                <input id="filter-parking" type="checkbox" name="parking">
-                <label for="filter-parking">Парковка</label>
+              <li class="filter__item">
+                <input class="filter__check" id="filter-parking" type="checkbox" name="parking">
+                <label class="filter__check-label" for="filter-parking">Парковка</label>
               </li>
-              <li>
-                <input id="filter-wi-fi" type="checkbox" name="wi-fi">
-                <label for="filter-wi-fi">wi-fi</label>
+              <li class="filter__item">
+                <input class="filter__check" id="filter-wi-fi" type="checkbox" name="wi-fi">
+                <label class="filter__check-label" for="filter-wi-fi">wi-fi</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filter-type-house">
             <legend>Тип жилья:</legend>
-            <ul>
-              <li>
-                <input id="filter-hotel" type="checkbox" name="hotel" checked>
-                <label for="filter-hotel">Гостиница</label>
+            <ul class="filter__list">
+              <li class="filter__item">
+                <input class="filter__check" id="filter-hotel" type="checkbox" name="hotel" checked>
+                <label class="filter__check-label" for="filter-hotel">Гостиница</label>
               </li>
-              <li>
-                <input id="filter-motel" type="checkbox" name="motel" checked>
-                <label for="filter-motel">Мотель</label>
+              <li class="filter__item">
+                <input class="filter__check" id="filter-motel" type="checkbox" name="motel" checked>
+                <label class="filter__check-label" for="filter-motel">Мотель</label>
               </li>
-              <li>
-                <input id="filter-apartments" type="checkbox" name="apartments" checked>
-                <label for="filter-apartments">Апартаменты</label>
+              <li class="filter__item">
+                <input class="filter__check" id="filter-apartments" type="checkbox" name="apartments" checked>
+                <label class="filter__check-label" for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="filer-price">
             <legend>Стоимость в сутки (Р):</legend>
-            <label class="filter-price-min">
-              От <input id="filter-price-min" type="text" name="filter-price-min" value="0" pattern="[0-9]+$" required>
-            </label>
-            <label class="filter-price-max">
-              До <input id="filter-price-max" type="text" name="filter-price-max" value="3000" pattern="[0-9]+$"
-                        required>
-            </label>
-            <div>
-              <!--            Сдесь стилями должен быть задан ползунок-->
-            </div>
-            <button type="submit">Показать</button>
+              <div>
+                <label class="filter-price-min visually-hidden" for="filter-price-min">От</label>
+                <input class="filer-price__input" id="filter-price-min" type="text" name="filter-price-min" placeholder="От 0" pattern="[0-9]+$"
+                       required>
+              </div>
+              <div>
+                <label class="filter-price-max visually-hidden" for="filter-price-max">До</label>
+                <input class="filer-price__input" id="filter-price-max" type="text" name="filter-price-max" placeholder="До 3000" pattern="[0-9]+$"
+                       required>
+              </div>
+              <div>
+<!--                Я сделаю это позже-->
+              </div>
+              <button class="filter-form__submit" type="submit">Показать</button>
           </fieldset>
         </form>
       </section>
       <section class="filter-result">
         <h2 class="visually-hidden">Результат поиска гостиницы</h2>
-        <div class="filter-result__options">
-          <p>Найдено: 3</p>
-          <p>Сортировка:</p>
-          <ul>
-            <li>
-              <a href="#">По цене</a>
+        <div class="filter-result__options result-options">
+          <p class="result-options__quantity">Найдено: 3</p>
+          <p class="result-options__sorting">Сортировка:</p>
+          <ul class="type-sorting">
+            <li class="type-sorting__item">
+              <a class="type-sorting__link" href="#">По цене</a>
             </li>
-            <li>
-              <a href="#">По типу</a>
+            <li class="type-sorting__item">
+              <a class="type-sorting__link" href="#">По типу</a>
             </li>
-            <li>
-              <a href="#">По рейтингу</a>
+            <li class="type-sorting__item">
+              <a class="type-sorting__link" href="#">По рейтингу</a>
             </li>
           </ul>
-          <ul>
+          <ul class="type-sorting__triangle">
             <!--       Это ссылки треугольники-->
-            <li>
+            <li class="type-sorting-triangle_item active">
               <a href="#" aria-label="По возростанию"></a>
             </li>
-            <li>
+            <li class="type-sorting-triangle_item">
               <a href="#" aria-label="По убыванию"></a>
             </li>
           </ul>
@@ -114,7 +117,7 @@
         <ul class="filter-result__hotels filter-result-hotels">
           <li>
             <article class="filter-result-hotels__item">
-              <figure class="hotel__img" >
+              <figure class="hotel__img">
                 <img src="./img/amara-resort-and-spa.jpg" alt="Amara Resort & Spa" width="135"
                      height="90">
               </figure>

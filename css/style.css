@@ -30,6 +30,7 @@
   --btn-hover: #604E43;
   --btn-active: #503E33;
   --grey-black-text: #333333;
+  --checkBox-diasbles: #6A6A6A;
   --black: #000000;
   --black-opacity: 0, 0, 0;
   --background-mountains: #766458;
@@ -62,7 +63,8 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+.visually-hidden,
+.filter__check {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -150,45 +152,55 @@ a {
 .advantages-item__text {
   font-weight: normal;
 }
-.white{
+
+.white {
   color: var(--background-white, white);
 }
-.advantages-item__content{
+
+.advantages-item__content {
   width: 400px;
   height: 256px;
   background-color: var(--light-blue, lightblue);
 }
-.features__item{
+
+.features__item {
   list-style: none;
 }
-.features__item::before{
+
+.features__item::before {
   content: "";
   display: block;
   background-repeat: no-repeat;
 }
-.features__item:first-child::before{
+
+.features__item:first-child::before {
   background-image: url("../img/icon-home.svg");
   width: 75px;
   height: 72px;
 }
-.features__item:nth-child(2)::before{
+
+.features__item:nth-child(2)::before {
   background-image: url("../img/icon-food.svg");
   width: 75px;
   height: 70px;
 }
-.features__item:last-child::before{
+
+.features__item:last-child::before {
   background-image: url("../img/icon-present.svg");
   width: 64px;
   height: 77px;
 }
-.features__heading{
+
+.features__heading {
   font-weight: bold;
   font-size: 21px;
   color: var(--black, black);
 }
-.features__text{
+
+.features__text {
   font-weight: normal;
 }
+
 /*search*/
 .search-hotels {
   text-align: center;
@@ -350,7 +362,135 @@ a {
   color: var(--brown-grey);
 }
 
+/*filter-form*/
+.filter-form {
+  background-color: var(--light-blue);
+  background-image: url("../img/background-hotels.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--background-white);
+  font-weight: normal;
+}
+
+.filter-form > fieldset {
+  border: 0;
+}
+
+.filter-form legend {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.filter__item {
+  list-style: none;
+}
+
+.filter__check-label:before {
+  content: "";
+  display: block;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-size: 23px 23px;
+  width: 23px;
+  height: 23px;
+}
+
+.filter__check:checked + .filter__check-label:before {
+  background-image: url("../img/checkbox-on.svg");
+  background-size: 27px 23px;
+  width: 27px;
+  height: 23px;
+}
+
+/*Не сделано disabled*/
+.filer-price__input {
+  background-color: transparent;
+  color: var(--background-white)
+}
+
+.filer-price__input::placeholder {
+  font-weight: normal;
+  text-transform: uppercase;
+  color: var(--background-white, white);
+}
+
+.filter-form__submit {
+  font-weight: normal;
+  color: var(--background-white);
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.filter-form__submit:hover {
+  background-color: var(--background-white);
+  color: var(--black);
+}
+
 /*filter-result*/
+.result-options__quantity {
+  color: var(--black, black);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.result-options__sorting {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--black, black);
+}
+
+.type-sorting {
+  list-style: none;
+}
+
+.type-sorting__link {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(var(--black-opacity), 0.3);
+  border-bottom: 1px dashed var(--light-blue);
+}
+
+.type-sorting__link:hover,
+.type-sorting__link:focus {
+  color: var(--light-blue);
+}
+
+.type-sorting__link:active {
+  color: var(--black, black);
+  border: none;
+}
+
+.type-sorting__triangle {
+  list-style: none;
+}
+
+.type-sorting-triangle_item::before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 10px;
+  background-size: 11px 10px;
+  background-repeat: no-repeat;
+}
+
+.type-sorting-triangle_item:first-child::before {
+  background-image: url("../img/icon-up.svg");
+}
+
+.type-sorting-triangle_item:first-child:hover::before,
+.type-sorting-triangle_item:first-child:focus::before {
+  background-image: url("../img/shape-1.svg");
+}
+
+.type-sorting-triangle_item:first-child:active::before,
+.type-sorting-triangle_item.active::before {
+  background-image: url("../img/icon-up-active.svg");
+}
+
+
 .filter-result__hotels {
   list-style: none;
   padding: 0;
