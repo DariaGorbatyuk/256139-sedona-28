@@ -133,6 +133,7 @@ a {
 .advantages__heading {
   font-weight: normal;
   line-height: 26px;
+  font-size: 14px;
 }
 
 .advantages__item {
@@ -457,7 +458,7 @@ a {
   font-size: 12px;
   line-height: 18px;
   color: rgba(var(--black-opacity), 0.3);
-  border-bottom: 1px dashed var(--light-blue);
+  border-bottom: 1px dotted var(--light-blue);
 }
 
 .type-sorting__link:hover,
