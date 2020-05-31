@@ -25,15 +25,13 @@
   --socials-hover: #669EC0;
   --socials-active: #5496BD;
   --grey-line: #E5E5E5;
-  --light-grey: #EEEEEE;
   --brown-grey: #766357;
   --btn-hover: #604E43;
   --btn-active: #503E33;
   --grey-black-text: #333333;
-  --checkBox-diasbles: #6A6A6A;
+  --checkBox-diasbles: #6A6A6A; /* Пока не использую-исправить*/
   --black: #000000;
   --black-opacity: 0, 0, 0;
-  --background-mountains: #766458;
   --html-academy-link: #231F20;
   --html-academy-active: #BDBBBC;
   --raiting: #666666;
@@ -114,7 +112,7 @@ a {
 /*greeting*/
 .greeting__img {
   height: 510px;
-  background-color: var(--background-mountains);
+  background-color: var(--brown-grey);
   background-image: url("../img/mountains.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -255,7 +253,7 @@ a {
 
 .site-footer.map {
   height: 594px;
-  background-color: var(--light-grey);
+  background-color: var(--background-grey, lightgrey);
   background-image: url("../img/map.jpg");
   background-size: cover;
   background-position: center;
