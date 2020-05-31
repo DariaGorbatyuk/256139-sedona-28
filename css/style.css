@@ -301,6 +301,7 @@ a {
   font-weight: normal;
   line-height: 24px;
   text-align: center;
+  margin-bottom: 49px;
 }
 
 .search-hotels__btn {
@@ -332,7 +333,7 @@ a {
 
 /*footer*/
 .site-footer {
-  height: 120px;
+  /*height: 120px;*/
   background-color: var(--background-white);
 }
 
@@ -343,11 +344,16 @@ a {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: grid;
+  align-items: end;
 }
 
 .site-footer__content {
-  height: 120px;
   background-color: rgba(var(--white-opacity), 0.9);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 23px;
+  padding-bottom: 36px;
 }
 
 .site-footer__contacts {
@@ -355,8 +361,12 @@ a {
   font-size: 21px;
   line-height: 26px;
   color: var(--black, black);
+  justify-self: center;
+  align-self: center;
 }
-
+.site-footer__contacts >p{
+  margin: 0;
+}
 .site-footer__contacts > a {
   color: var(--black, black);
 }
@@ -369,13 +379,24 @@ a {
 .site-footer__contacts > a:active {
   color: rgba(var(--black-opacity), 0.3);
 }
-
+.site-footer__socials{
+  justify-self: center;
+  align-self: center;
+}
 .socials {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
-
+.social__item{
+ margin-right: 6px;
+}
+.social__item:last-child{
+  margin-right: 0;
+}
 .social {
-  display: inline-block;
+  display: block;
   width: 46px;
   height: 48px;
   background-color: var(--light-blue);
@@ -420,6 +441,10 @@ a {
 .site-footer__developer {
   font-weight: normal;
   line-height: 26px;
+  margin: 0;
+  justify-self: center;
+  align-self: center;
+  display: flex;
 }
 
 .developer__link {
