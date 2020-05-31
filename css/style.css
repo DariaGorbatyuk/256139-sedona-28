@@ -146,8 +146,12 @@ a {
   background-image: url("../img/mountains.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  margin-bottom: 42px;
 }
-
+.greeting__img > img{
+  margin: auto;
+}
 .greeting__text {
   width: 470px;
   color: var(--black, black);
@@ -155,6 +159,8 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 43px;
 }
 
 /*advantages*/
@@ -162,6 +168,7 @@ a {
   font-weight: normal;
   line-height: 26px;
   font-size: 14px;
+  text-align: center
 }
 
 .advantages__item {
