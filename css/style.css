@@ -171,10 +171,33 @@ a {
   text-align: center
 }
 
-.advantages__item {
+.advantages__list {
   list-style: none;
-}
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 
+}
+.advantages-item{
+  flex-shrink: 0;
+  max-width: 100%;
+}
+.advantages-item:not(.long){
+  flex-basis: 400px;
+}
+.advantages__item:first-child,
+.advantages__item:nth-child(2){
+  display: flex;
+  flex-wrap: wrap;
+}
+.advantages__item:nth-child(2) > .advantages-item__content{
+  order: 2;
+}
+.advantages-item__img{
+  width: 800px;
+  height: 256px;
+}
 .advantages-item__heading {
   font-weight: bold;
   font-size: 21px;
@@ -195,14 +218,22 @@ a {
 
 .advantages-item__content {
   width: 400px;
-  height: 256px;
   background-color: var(--light-blue, lightblue);
+  overflow: hidden;
 }
 
-.features__item {
+.features__list {
   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  max-width: 100%;
+/*  КОстыли*/
 }
-
+.features__item{
+  flex-basis: 400px;
+}
 .features__item::before {
   content: "";
   display: block;
