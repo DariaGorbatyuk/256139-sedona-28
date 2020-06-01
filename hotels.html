@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона-hotels</title>
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="page-body">
   <div class="wrapper">
     <header class="site-header">
       <nav class="navigation">
-        <a href="index.html" aria-label="На главную страницу">
+        <a class="navigation__logo" href="index.html" aria-label="На главную страницу">
           <img src="./img/logo.svg" alt="Логотип" width="138" height="70">
         </a>
         <ul class="menu">
-          <li>
+          <li class="menu__item left-side">
             <a class="menu__link" href="blank.html">Информация</a>
           </li>
-          <li>
+          <li class="menu__item left-side">
             <a class="menu__link" href="blank.html">Фото и видео</a>
           </li>
-          <li>
+          <li class="menu__item right-side">
             <a class="menu__link" href="blank.html">Карта штата</a>
           </li>
-          <li>
+          <li class="menu__item right-side">
             <a class="menu__link">Гостиницы</a>
           </li>
         </ul>
@@ -31,7 +31,7 @@
     </header>
     <main>
       <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
-      <section>
+      <section class="filter">
         <h2 class="visually-hidden">Фильтр для поска гостиницы</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="filter-infrastructure">

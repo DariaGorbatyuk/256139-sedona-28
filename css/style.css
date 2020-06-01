@@ -117,17 +117,20 @@ a {
 }
 
 .menu__item:first-child {
-  margin-right: 134px;
+  margin-right: 130px;
 }
-.menu__item.left-side{
+
+.menu__item.left-side {
   text-align: left;
 }
-.menu__item.right-side{
+
+.menu__item.right-side {
   text-align: right;
 }
-.menu__item.left-side +.menu__item.right-side {
+
+.menu__item.left-side + .menu__item.right-side {
   margin-left: auto;
-  margin-right: 147px;
+  margin-right: 128px;
 }
 
 .menu__link {
@@ -145,6 +148,7 @@ a {
   color: rgba(var(--black-opacity), 0.3);
 }
 
+/*index*/
 /*main*/
 /*greeting*/
 .greeting__img {
@@ -360,29 +364,61 @@ a {
   background-repeat: no-repeat;
   color: var(--background-white);
   font-weight: normal;
+  display: flex;
+  align-items: stretch;
+  padding-top: 26.5px;
+  padding-bottom: 31px;
 }
 
 .filter-form > fieldset {
   border: 0;
+  padding: 0;
+  margin: 0;
+  margin-right: 118px;
+}
+
+.filter-form > .filter-infrastructure {
+  margin-left: 72px;
+}
+
+.filter-form > .filer-price {
+  margin-right: 73px;
+  margin-left: auto;
+  flex-basis: 327px;
 }
 
 .filter-form legend {
   font-weight: bold;
   font-size: 16px;
+  padding-bottom: 24px;
 }
-
-.filter__item {
+.filter__list{
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
+.filter__item{
+  position: relative;
+}
+.filter__check-label{
+  display: block;
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+.filter__item:last-child .filter__check-label{
+  padding-bottom: 0;
+}
 .filter__check-label:before {
   content: "";
   display: block;
+  position: absolute;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-size: 23px 23px;
   width: 23px;
   height: 23px;
+  top: 0;
+  left: 0;
 }
 
 .filter__check:checked + .filter__check-label:before {
@@ -571,6 +607,7 @@ a {
   background-color: var(--background-grey);
   color: var(--raiting);
 }
+
 /*footer*/
 .site-footer {
   background-color: var(--background-white);
