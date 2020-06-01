@@ -118,8 +118,13 @@ a {
 .menu__item:first-child {
   margin-right: 134px;
 }
-
-.menu__item.right-side {
+.menu__item.left-side{
+  text-align: left;
+}
+.menu__item.right-side{
+  text-align: right;
+}
+.menu__item.left-side +.menu__item.right-side {
   margin-left: auto;
   margin-right: 147px;
 }
