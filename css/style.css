@@ -556,7 +556,7 @@ a {
 .type-sorting-triangle__item:last-child > a::before {
   transform: rotate(180deg);
 }
-
+/*result hotels*/
 .filter-result__hotels {
   list-style: none;
   padding: 0;
