@@ -113,6 +113,7 @@ a {
 
 .menu__item {
   padding: 15px 0;
+  width: 98px;
 }
 
 .menu__item:first-child {
