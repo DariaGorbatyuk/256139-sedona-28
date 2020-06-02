@@ -193,7 +193,6 @@ a {
 }
 
 .advantages-item {
-  /*width: 100%;*/
   text-align: center;
 }
 
@@ -251,7 +250,6 @@ a {
   display: flex;
   flex-shrink: 0;
   flex-wrap: wrap;
-  /*width: 100%;*/
 }
 
 .features__item {
