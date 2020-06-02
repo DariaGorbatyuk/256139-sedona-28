@@ -478,6 +478,8 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
+  margin-right: 46px;
 }
 
 .result-options__sorting {
@@ -485,20 +487,28 @@ a {
   font-size: 12px;
   line-height: 18px;
   color: var(--black, black);
+  margin: 0;
+  margin-right: 40px;
 }
 
 .type-sorting {
   list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
-
+.type-sorting__item{
+  margin-right: 32px;
+}
+.type-sorting__item:last-child{
+  margin-right: 0;
+}
 .type-sorting__link {
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   color: rgba(var(--black-opacity), 0.3);
   border-bottom: 1px dotted var(--light-blue);
-  margin-right: 32px;
 }
 
 .type-sorting__link:hover,
@@ -560,6 +570,7 @@ a {
 .filter-result__hotels {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .filter-result-hotels__item {
