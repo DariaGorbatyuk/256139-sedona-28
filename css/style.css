@@ -258,16 +258,18 @@ input[type = "checkbox"].visually-hidden {
 .features__item {
   flex-basis: 400px;
   text-align: center;
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 82px;
 }
 
 .features__heading {
   margin: 0;
-  padding-top: 159px;
+  margin-bottom: 25px;
 }
 
 .features__text {
   margin: 0;
-  padding-bottom: 82px;
 }
 
 .features__item::before {
