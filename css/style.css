@@ -199,6 +199,8 @@ input[type = "checkbox"].visually-hidden {
 .advantages-item:not(.long) {
   flex-basis: 400px;
   background-color: var(--light-grey);
+  padding-top: 47px;
+  padding-bottom: 54px;
 }
 
 .advantages__item:first-child,
@@ -220,7 +222,7 @@ input[type = "checkbox"].visually-hidden {
   font-weight: bold;
   font-size: 21px;
   color: var(--black, black);
-  margin: 0;
+  margin: 0 0 25px;
 }
 
 .advantages-item__number {
@@ -244,7 +246,6 @@ input[type = "checkbox"].visually-hidden {
 
 .advantages-item__content > .advantages-item__heading {
   color: inherit;
-  margin-bottom: 25px;
 }
 
 .features__list {
@@ -277,6 +278,9 @@ input[type = "checkbox"].visually-hidden {
   display: block;
   background-repeat: no-repeat;
   position: absolute;
+  top: 60px;
+  left: 50%;
+  margin-left: -38px;
 }
 
 .features__item:first-child::before {
@@ -295,6 +299,8 @@ input[type = "checkbox"].visually-hidden {
   background-image: url("../img/icon-present.svg");
   width: 64px;
   height: 77px;
+  top: 53px;
+  margin-left: -32px;
 }
 
 .features__heading {
