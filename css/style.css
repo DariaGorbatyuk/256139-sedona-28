@@ -26,6 +26,7 @@
   --socials-active: #5496BD;
   --grey-line: #E5E5E5;
   --light-grey: #EEEEEE;
+  --input-hover: #EBEBEB;
   --brown-grey: #766357;
   --btn-hover: #604E43;
   --btn-active: #503E33;
@@ -355,6 +356,7 @@ input[type = "checkbox"].visually-hidden {
   background-color: var(--btn-active);
   color: rgba(var(--white-opacity), 0.3);
 }
+
 /*Form-search*/
 .form-search {
   width: 568px;
@@ -362,31 +364,88 @@ input[type = "checkbox"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  padding: 55px;
 }
-.form-search label{
+
+.form-search__row {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 29px;
+  align-items: center;
+}
+.form-search__data-inp{
+  width: 346px;
+  height: 38px;
+  padding: 6px 0 6px 12px;
+  background-color: var(--background-grey);
+  border: 0;
+}
+.form-search__data-inp:hover{
+  background-color: var(--input-hover);
+}
+.form-search__data-inp:active,
+.form-search__data-inp:focus{
+  background-color: var(--background-white);
+}
+.form-search label {
   font-weight: bold;
   line-height: 26px;
   color: var(--black);
 }
-.form-search input::placeholder{
+
+.form-search input::placeholder {
   font-weight: bold;
   line-height: 26px;
   color: var(--black);
 }
+
+.form-search__calendar-btn {
+  position: absolute;
+  padding: 0;
+  border: 0;
+  right: 9px;
+}
+
 .form-search__calendar-btn:hover .form-search__calendar-icon path,
-.form-search__calendar-btn:focus .form-search__calendar-icon path{
+.form-search__calendar-btn:focus .form-search__calendar-icon path {
   fill: var(--black)
 }
-.form-search__calendar-btn:active .form-search__calendar-icon path{
-  fill: var(--light-blue)
+
+.form-search__calendar-btn:active .form-search__calendar-icon path {
+  fill: var(--light-blue);
+  outline: 0;
 }
-.form-search__columns{
+
+.form-search__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-search__column-1,
+.form-search__column-2{
   display: flex;
 }
-.form-search__submit{
-  width: 458px;
+.group-adults-inp,
+.group-children-inp{
+  width: 36px;
+  border: 0;
+  padding: 0;
 }
+.form-search__submit {
+  width: 100%;
+  background-color: var(--light-blue);
+  padding: 16px 0;
+  border: 0;
+  color: var(--background-white);
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
 /*HOTELS*/
 .menu__link:not([href]) {
   color: var(--brown-grey);

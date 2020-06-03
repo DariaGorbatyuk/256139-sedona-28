@@ -100,8 +100,8 @@
       <button class="search-hotels__btn" type="button">Поиск гостиницы в Седоне</button>
       <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
         <div class="form-search__row">
-          <label for="search-checkIn">Дата заезда:</label>
-          <input id="search-checkIn" type="text" name="checkIn" placeholder="24 апреля 2017" required>
+          <label for="search-check-in">Дата заезда:</label>
+          <input class="form-search__data-inp" id="search-check-in" type="text" name="checkIn" placeholder="24 апреля 2017" required>
           <button class="form-search__calendar-btn" type="button" name="calendar">
             <span class="visually-hidden">Календарь</span>
             <svg class="form-search__calendar-icon" width="21" height="23" fill="none"
@@ -116,8 +116,8 @@
           </button>
         </div>
         <div class="form-search__row">
-          <label for="search-checkOut">Дата выезда:</label>
-          <input id="search-checkOut" type="text" name="checkOut" placeholder="4 июля 2017" required>
+          <label for="search-check-out">Дата выезда:</label>
+          <input class="form-search__data-inp" id="search-check-out" type="text" name="checkOut" placeholder="4 июля 2017" required>
           <button class="form-search__calendar-btn" type="button" name="calendar">
             <span class="visually-hidden">Календарь</span>
             <svg class="form-search__calendar-icon" width="21" height="23" fill="none"
@@ -133,28 +133,36 @@
         </div>
         <div class="form-search__columns">
           <div class="form-search__column-1">
-            <label class="search-groupAdults" for="search-groupAdults">Взрослые:</label>
+            <label class="search-groupAdults" for="search-group-adults">Взрослые:</label>
             <div>
-              <button type="button" aria-label="Уменьшить">
-                <!--                <svg></svg>-->
+              <button class="form-search__minus" type="button" aria-label="Уменьшить">
+                <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="12" height="3" fill="#A9A9A9"/>
+                </svg>
               </button>
-              <input id="search-groupAdults" type="text" name="groupAdults" placeholder="2" pattern="[0-9]{,3}"
+              <input class="group-adults-inp" id="search-group-adults" type="text" name="group-adults" placeholder="2" pattern="[0-9]{,3}"
                      required>
-              <button type="button" aria-label="Увеличить">
-                <!--                <svg></svg>-->
+              <button class="form-search__plus" type="button" aria-label="Увеличить">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                </svg>
               </button>
             </div>
           </div>
           <div class="form-search__column-2">
-            <label class="search-groupChildren" for="search-groupChildren">Дети:</label>
+            <label class="search-groupChildren" for="search-group-children">Дети:</label>
             <div>
-              <button type="button" aria-label="Уменьшить">
-                <!--                <svg></svg>-->
+              <button class="form-search__minus" type="button" aria-label="Уменьшить">
+                <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="12" height="3" fill="#A9A9A9"/>
+                </svg>
               </button>
-              <input id="search-groupChildren" type="text" name="groupChildren" placeholder="0" pattern="[0-9]{,3}"
+              <input class="group-children-inp" id="search-group-children" type="text" name="group-children" placeholder="0" pattern="[0-9]{,3}"
                      required>
-              <button type="button" aria-label="Увеличить">
-                <!--                <svg></svg>-->
+              <button class="form-search__plus" type="button" aria-label="Увеличить">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" fill="#A9A9A9"/>
+                </svg>
               </button>
             </div>
           </div>
