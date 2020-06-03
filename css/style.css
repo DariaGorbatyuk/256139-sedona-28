@@ -62,8 +62,8 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden,
-.filter__check {
+.visually-hidden:not(:focus):not(:active),
+input[type = "checkbox"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
