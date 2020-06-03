@@ -224,8 +224,8 @@ input[type = "checkbox"].visually-hidden {
 }
 
 .advantages-item__number {
-  margin: 0;
   font-weight: normal;
+  margin: 0 0 23px;
 }
 
 .advantages-item__text {
@@ -233,15 +233,18 @@ input[type = "checkbox"].visually-hidden {
   font-weight: normal;
 }
 
-.advantages-item__content > .advantages-item__heading {
-  color: var(--background-white, white);
-}
-
 .advantages-item__content {
   width: 400px;
   background-color: var(--light-blue, lightblue);
   text-align: center;
   color: var(--background-white, white);
+  padding-top: 47px;
+  padding-bottom: 54px;
+}
+
+.advantages-item__content > .advantages-item__heading {
+  color: inherit;
+  margin-bottom: 25px;
 }
 
 .features__list {
@@ -676,13 +679,16 @@ input[type = "checkbox"].visually-hidden {
   padding: 0;
   align-self: flex-end
 }
-.hotels__stars > li{
+
+.hotels__stars > li {
   margin-right: 5px;
 }
-.hotels__stars > li:last-child{
+
+.hotels__stars > li:last-child {
   margin-right: 0;
-/*  Не работает*/
+  /*  Не работает*/
 }
+
 .hotels__stars > li::before {
   content: "";
   display: block;
@@ -691,6 +697,7 @@ input[type = "checkbox"].visually-hidden {
   width: 19px;
   height: 17px;
 }
+
 .hotels__rating {
   background-color: var(--background-grey);
   color: var(--raiting);
