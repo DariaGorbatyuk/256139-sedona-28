@@ -355,11 +355,38 @@ input[type = "checkbox"].visually-hidden {
   background-color: var(--btn-active);
   color: rgba(var(--white-opacity), 0.3);
 }
-
+/*Form-search*/
 .form-search {
-  display: none;
+  width: 568px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
 }
-
+.form-search label{
+  font-weight: bold;
+  line-height: 26px;
+  color: var(--black);
+}
+.form-search input::placeholder{
+  font-weight: bold;
+  line-height: 26px;
+  color: var(--black);
+}
+.form-search__calendar-btn:hover .form-search__calendar-icon path,
+.form-search__calendar-btn:focus .form-search__calendar-icon path{
+  fill: var(--black)
+}
+.form-search__calendar-btn:active .form-search__calendar-icon path{
+  fill: var(--light-blue)
+}
+.form-search__columns{
+  display: flex;
+}
+.form-search__submit{
+  width: 458px;
+}
 /*HOTELS*/
 .menu__link:not([href]) {
   color: var(--brown-grey);
