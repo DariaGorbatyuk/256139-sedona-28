@@ -869,7 +869,6 @@ input[type = "checkbox"].visually-hidden {
   font-size: 21px;
   line-height: 26px;
   color: var(--black, black);
-  /*justify-self: center;*/
 }
 
 .site-footer__contacts > p {
@@ -909,7 +908,9 @@ input[type = "checkbox"].visually-hidden {
 }
 
 .social {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
   background-color: var(--light-blue);
@@ -955,14 +956,15 @@ input[type = "checkbox"].visually-hidden {
   font-weight: normal;
   line-height: 26px;
   margin: 0;
-  /*justify-self: center;*/
   display: flex;
+  align-items: center;
 }
 
 .developer__link {
   display: block;
   width: 115px;
   height: 41px;
+  margin-left: 11px;
 }
 
 .developer__logo {
