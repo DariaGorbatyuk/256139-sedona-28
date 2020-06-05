@@ -113,7 +113,7 @@ input[type = "checkbox"].visually-hidden {
 }
 
 .menu__item {
-  padding: 15px 0;
+  padding: 14px 0;
   width: 98px;
 }
 
@@ -173,7 +173,7 @@ input[type = "checkbox"].visually-hidden {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  margin: 0 auto 45px;
+  margin: 0 auto 44px;
 }
 
 /*advantages*/
@@ -224,16 +224,18 @@ input[type = "checkbox"].visually-hidden {
   font-size: 21px;
   color: var(--black, black);
   margin: 0 0 25px;
+  padding: 0 130px;
 }
 
 .advantages-item__number {
   font-weight: normal;
-  margin: 0 0 23px;
+  margin: 0 0 25px;
 }
 
 .advantages-item__text {
   margin: 0;
   font-weight: normal;
+  padding: 0 71px;
 }
 
 .advantages-item__content {
@@ -247,14 +249,18 @@ input[type = "checkbox"].visually-hidden {
 
 .advantages-item__content > .advantages-item__heading {
   color: inherit;
+  padding: 0 125px;
 }
-
+.advantages-item__content > .advantages-item__text{
+  padding: 0;
+}
 .features__list {
   list-style: none;
   padding: 0;
   display: flex;
   flex-shrink: 0;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .features__item {
@@ -272,6 +278,7 @@ input[type = "checkbox"].visually-hidden {
 
 .features__text {
   margin: 0;
+  padding: 0 51px;
 }
 
 .features__item::before {
@@ -324,20 +331,22 @@ input[type = "checkbox"].visually-hidden {
   color: var(--black);
   font-size: 30px;
   line-height: 24px;
-  margin: 0 0 37px;
+  margin: 0 0 32px;
 }
 
 .search-hotels__subtitle {
   font-weight: normal;
   line-height: 24px;
   text-align: center;
-  margin: 0 0 49px;
+  margin: 0 0 45px;
+  padding: 0 381px;
 }
 
 .search-hotels__btn {
   width: 568px;
   height: 86px;
   padding: 0;
+  border: 0;
   background-color: var(--brown-grey);
   color: var(--background-white, white);
   font-weight: bold;
@@ -397,6 +406,7 @@ input[type = "checkbox"].visually-hidden {
   font-weight: bold;
   line-height: 26px;
   color: var(--black);
+  align-self: center;
 }
 
 .form-search input::placeholder {
@@ -427,8 +437,7 @@ input[type = "checkbox"].visually-hidden {
   align-items: center;
   flex-basis: 100%;
   justify-content: space-between;
-  margin-bottom: 60px;
-  margin-top: 6px;
+  margin-bottom: 55px;
 }
 .form-search__column-1,
 .form-search__column-2{
@@ -446,21 +455,25 @@ input[type = "checkbox"].visually-hidden {
 }
 .group-adults-inp,
 .group-children-inp{
-  width: 36px;
+  width: 38px;
+  height: 38px;
+  padding: 0 0 0 15px;
   border: 0;
-  padding: 0;
   background-color: var(--background-grey);
 }
 .form-search__math-btn{
   padding: 0;
   border: 0;
-  width: 39px;
+  width: 38px;
   background-color: var(--background-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .form-search__submit {
   width: 100%;
+  height: 58px;
   background-color: var(--light-blue);
-  padding: 16px 0;
   border: 0;
   color: var(--background-white);
   font-weight: bold;
@@ -845,8 +858,6 @@ input[type = "checkbox"].visually-hidden {
   justify-items: center;
   padding-top: 30px;
   padding-bottom: 32px;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
 }
 
 .site-footer {
