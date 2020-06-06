@@ -414,7 +414,6 @@ input[type = "checkbox"].visually-hidden {
 
 .form-search input::placeholder {
   font-weight: bold;
-  line-height: 26px;
   color: var(--black);
 }
 
