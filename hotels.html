@@ -35,7 +35,7 @@
       <h2 class="visually-hidden">Фильтр для поска гостиницы</h2>
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="filter-infrastructure">
-          <legend>Инфраструктура:</legend>
+          <legend class="filter-form__legend">Инфраструктура:</legend>
           <ul class="filter__list">
             <li class="filter__item">
               <input class="filter__check visually-hidden" id="filter-pool" type="checkbox" name="pool" checked>
@@ -52,7 +52,7 @@
           </ul>
         </fieldset>
         <fieldset class="filter-type-house">
-          <legend>Тип жилья:</legend>
+          <legend class="filter-form__legend">Тип жилья:</legend>
           <ul class="filter__list">
             <li class="filter__item">
               <input class="filter__check visually-hidden" id="filter-hotel" type="checkbox" name="hotel" checked>
@@ -70,7 +70,7 @@
           </ul>
         </fieldset>
         <fieldset class="filer-price">
-          <legend>Стоимость в сутки (Р):</legend>
+          <legend class="filter-form__legend price">Стоимость в сутки (Р):</legend>
           <div class="filer-price__inputs">
             <label class="filter-price-min">
               <span class="visually-hidden">От</span>
@@ -94,7 +94,7 @@
                 "></div>
             </div>
             <button class="toggle toggle-min" type="button" style="
-                left: -1%"></button>
+                left: 0"></button>
             <button class="toggle toggle-max" type="button" style="
             left: 78%"></button>
           </div>
@@ -220,13 +220,13 @@
     <section class="site-footer__socials">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="socials">
-        <li>
+        <li class="social__item">
           <a class="social social__tw" href="blank.html"><span class="visually-hidden">Твиттер</span></a>
         </li>
-        <li>
+        <li class="social__item">
           <a class="social social__fc" href="blank.html"><span class="visually-hidden">Фэйсбук</span></a>
         </li>
-        <li>
+        <li class="social__item">
           <a class="social social__ut" href="blank.html"><span class="visually-hidden">Ютуб</span></a>
         </li>
       </ul>
