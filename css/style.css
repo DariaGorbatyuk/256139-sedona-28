@@ -32,6 +32,7 @@
   --btn-active: #503E33;
   --grey-black-text: #333333;
   --checkBox-diasbles: #6A6A6A; /* Пока не использую-исправить*/
+  --toggle: #ABABAB;
   --black: #000000;
   --black-opacity: 0, 0, 0;
   --html-academy-link: #231F20;
@@ -497,7 +498,7 @@ input[type = "checkbox"].visually-hidden {
   font-weight: normal;
   display: flex;
   align-items: stretch;
-  padding-top: 26.5px;
+  padding-top: 28.5px;
   padding-bottom: 31px;
 }
 
@@ -512,16 +513,11 @@ input[type = "checkbox"].visually-hidden {
   margin-left: 72px;
 }
 
-.filter-form > .filer-price {
-  margin-right: 73px;
-  margin-left: auto;
-  flex-basis: 327px;
-}
 
 .filter-form legend {
   font-weight: bold;
   font-size: 16px;
-  padding-bottom: 24px;
+  margin-bottom: 11px;
 }
 
 .filter__list {
@@ -571,18 +567,80 @@ input[type = "checkbox"].visually-hidden {
 .filter__check:checked:disabled + .filter__check-label:before {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
-
-.filer-price__input {
-  background-color: transparent;
-  color: var(--background-white)
+.filter-form > .filer-price {
+  margin-right: 65px;
+  margin-left: auto;
+  flex-basis: 327px;
 }
 
+.filer-price__inputs{
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+.filer-price__inputs-rect{
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  top: 7px;
+  margin-left: -2px;
+  left: 50%;
+  background-color: var(--background-white);
+}
+.filer-price__input {
+  background-color: transparent;
+  color: var(--background-white);
+  border: 2px solid var(--background-white);
+  width: 159px;
+  height: 36px;
+  padding: 0 0 0 67px;
+}
+.filer-price__input:focus{
+  outline: none;
+}
+.filer-price__input.min{
+border-right: 0;
+}
+.filer-price__input.max{
+  border-left: 0;
+}
 .filer-price__input::placeholder {
   font-weight: normal;
   text-transform: uppercase;
   color: var(--background-white, white);
 }
-
+/*range*/
+.range-filter{
+  position: relative;
+  margin-bottom: 33px;
+}
+.range-filter .scale{
+  width: 316px;
+  height: 2px;
+  background-color: rgba(var(--white-opacity), 0.3);
+}
+.range-filter .bar{
+  width: 85%;
+  height: 2px;
+  background-color: var(--background-white);
+}
+.range-filter .toggle{
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  padding: 0;
+  background-color: var(--toggle);
+  border: 8px solid var(--background-white,white);
+  border-radius: 50%;
+  top: -8px;
+  cursor: pointer;
+}
+.range-filter .toggle-min{
+  left: 3px;
+}
+.range-filter .toggle-max{
+  left: 256px;
+}
 .filter-form__submit {
   font-weight: normal;
   color: var(--background-white);

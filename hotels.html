@@ -63,27 +63,40 @@
               <label class="filter__check-label" for="filter-motel">Мотель</label>
             </li>
             <li class="filter__item">
-              <input class="filter__check visually-hidden" id="filter-apartments" type="checkbox" name="apartments" checked>
+              <input class="filter__check visually-hidden" id="filter-apartments" type="checkbox" name="apartments"
+                     checked>
               <label class="filter__check-label" for="filter-apartments">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="filer-price">
           <legend>Стоимость в сутки (Р):</legend>
-          <div>
-            <label class="filter-price-min visually-hidden" for="filter-price-min">От</label>
-            <input class="filer-price__input" id="filter-price-min" type="text" name="filter-price-min"
-                   placeholder="От 0" pattern="[0-9]+$"
-                   required>
+          <div class="filer-price__inputs">
+            <label class="filter-price-min">
+              <span class="visually-hidden">От</span>
+              <input class="filer-price__input min" type="text" name="filter-price-min"
+                     placeholder="От 0" pattern="[0-9]+$"
+                     required>
+            </label>
+            <div class="filer-price__inputs-rect"></div>
+            <label class="filter-price-max">
+              <span class="visually-hidden">До</span>
+              <input class="filer-price__input max" type="text" name="filter-price-max"
+                     placeholder="До 3000" pattern="[0-9]+$"
+                     required>
+            </label>
+
           </div>
-          <div>
-            <label class="filter-price-max visually-hidden" for="filter-price-max">До</label>
-            <input class="filer-price__input" id="filter-price-max" type="text" name="filter-price-max"
-                   placeholder="До 3000" pattern="[0-9]+$"
-                   required>
-          </div>
-          <div>
-            <!--                Я сделаю это позже-->
+          <div class="range-filter">
+            <div class="scale">
+              <div class="bar" style="
+                width: 85%;
+                "></div>
+            </div>
+            <button class="toggle toggle-min" type="button" style="
+                left: 0"></button>
+            <button class="toggle toggle-max" type="button" style="
+            left: 80%"></button>
           </div>
           <button class="filter-form__submit" type="submit">Показать</button>
         </fieldset>
