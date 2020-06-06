@@ -246,6 +246,8 @@ input[type = "checkbox"].visually-hidden {
   color: var(--background-white, white);
   padding-top: 47px;
   padding-bottom: 54px;
+  height: 256px;
+  overflow: hidden;
 }
 
 .advantages-item__content > .advantages-item__heading {
@@ -471,6 +473,17 @@ input[type = "checkbox"].visually-hidden {
   align-items: center;
   justify-content: center;
 }
+.form-search__minus:hover rect,
+.form-search__minus:focus rect,
+.form-search__plus:hover path,
+.form-search__plus:focus path{
+  fill: var(--black);
+}
+.form-search__minus:active rect,
+.form-search__plus:active path{
+  fill: var(--light-blue);
+}
+
 .form-search__submit {
   width: 100%;
   height: 58px;
@@ -482,7 +495,14 @@ input[type = "checkbox"].visually-hidden {
   line-height: 27px;
   text-transform: uppercase;
 }
-
+.form-search__submit:hover,
+.form-search__submit:focus{
+  background-color: var(--socials-hover);
+}
+.form-search__submit:active{
+  background-color: var(--socials-active);
+  color: rgba(var(--white-opacity), 0.3);
+}
 /*HOTELS*/
 .menu__link:not([href]) {
   color: var(--brown-grey);
@@ -631,9 +651,17 @@ border-right: 0;
   padding: 0;
   background-color: var(--toggle);
   border: 8px solid var(--background-white,white);
+  box-shadow: 0 2px 1px 0 var(--toggle);
   border-radius: 50%;
-  top: -8px;
+  top: -9px;
   cursor: pointer;
+}
+.range-filter .toggle:hover,
+.range-filter .toggle:focus,
+.range-filter .toggle:active{
+  width: 24px;
+  height: 24px;
+  border: 10px solid var(--background-white,white);
 }
 .range-filter .toggle-min{
   left: 3px;
