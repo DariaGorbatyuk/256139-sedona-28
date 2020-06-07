@@ -327,6 +327,7 @@ input[type = "checkbox"].visually-hidden {
 /*search*/
 .search-hotels {
   text-align: center;
+  position: relative;
 }
 
 .search-hotels__heading {
@@ -354,6 +355,8 @@ input[type = "checkbox"].visually-hidden {
   font-weight: bold;
   font-size: 21px;
   text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
 }
 
 .search-hotels__btn:hover,
@@ -368,13 +371,18 @@ input[type = "checkbox"].visually-hidden {
 
 /*Form-search*/
 .form-search {
+  position: absolute;
   width: 568px;
   margin: 0 auto;
+  background-color: var(--background-white);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   padding: 55px;
+  top: 100%;
+  left: 0;
+  right: 0;
 }
 
 .form-search__row {
