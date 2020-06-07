@@ -859,8 +859,16 @@ input[type = "checkbox"].visually-hidden {
   line-height: 26px;
   color: var(--black, black);
   margin: 0 0 7px;
+  text-decoration: none
 }
 
+.hotel__title:hover,
+.hotel__title:focus {
+  color: var(--light-blue);
+}
+.hotel__title:active{
+  color: rgba(var(--black-opacity), 0.3);
+}
 .hotel__info {
   margin-bottom: 14px;
   display: flex;
