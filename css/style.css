@@ -423,13 +423,15 @@ input[type = "checkbox"].visually-hidden {
   border: 0;
   right: 9px;
 }
-
-.form-search__calendar-btn:hover .form-search__calendar-icon path,
-.form-search__calendar-btn:focus .form-search__calendar-icon path {
+.form-search__calendar-icon{
+  fill: #A9A9A9;
+}
+.form-search__calendar-btn:hover .form-search__calendar-icon,
+.form-search__calendar-btn:focus .form-search__calendar-icon {
   fill: var(--black)
 }
 
-.form-search__calendar-btn:active .form-search__calendar-icon path {
+.form-search__calendar-btn:active .form-search__calendar-icon{
   fill: var(--light-blue);
   outline: 0;
 }
@@ -547,6 +549,7 @@ input[type = "checkbox"].visually-hidden {
   font-size: 16px;
   margin-bottom: 23px;
 }
+
 .filter-form__legend.price {
   margin-bottom: 9px;
 }
