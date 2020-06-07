@@ -811,11 +811,9 @@ input[type = "checkbox"].visually-hidden {
   height: 10px;
   background-size: 11px 10px;
   background-repeat: no-repeat;
-}
-
-.type-sorting-triangle__item > a::before {
   background-image: url("../img/icon-up.svg");
 }
+
 
 .type-sorting-triangle__item > a:hover::before,
 .type-sorting-triangle__item > a:focus::before {
