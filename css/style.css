@@ -430,6 +430,7 @@ input[type = "checkbox"].visually-hidden {
   padding: 0;
   border: 0;
   right: 9px;
+  background-color: transparent;
 }
 .form-search__calendar-icon{
   fill: #A9A9A9;
