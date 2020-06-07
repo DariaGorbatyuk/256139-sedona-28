@@ -33,6 +33,7 @@
   --grey-black-text: #333333;
   --checkBox-diasbles: #6A6A6A; /* Пока не использую-исправить*/
   --toggle: #ABABAB;
+  --triangle-link: #cacaca;
   --black: #000000;
   --black-opacity: 0, 0, 0;
   --html-academy-link: #231F20;
@@ -432,15 +433,17 @@ input[type = "checkbox"].visually-hidden {
   right: 9px;
   background-color: transparent;
 }
-.form-search__calendar-icon{
+
+.form-search__calendar-icon {
   fill: #A9A9A9;
 }
+
 .form-search__calendar-btn:hover .form-search__calendar-icon,
 .form-search__calendar-btn:focus .form-search__calendar-icon {
   fill: var(--black)
 }
 
-.form-search__calendar-btn:active .form-search__calendar-icon{
+.form-search__calendar-btn:active .form-search__calendar-icon {
   fill: var(--light-blue);
   outline: 0;
 }
@@ -804,28 +807,21 @@ input[type = "checkbox"].visually-hidden {
   margin-right: 0;
 }
 
-.type-sorting-triangle__item > a::before {
-  content: "";
-  display: inline-block;
-  width: 11px;
-  height: 10px;
-  background-size: 11px 10px;
-  background-repeat: no-repeat;
-  background-image: url("../img/icon-up.svg");
+.type-sorting-triangle__item .type-sorting-triangle__icon {
+  fill: var(--triangle-link);
 }
 
-
-.type-sorting-triangle__item > a:hover::before,
-.type-sorting-triangle__item > a:focus::before {
-  background-image: url("../img/shape-1.svg");
+.type-sorting-triangle__item:hover .type-sorting-triangle__icon,
+.type-sorting-triangle__item:focus .type-sorting-triangle__icon {
+  fill: var(--black);
 }
 
-.type-sorting-triangle__item > a:active::before,
-.type-sorting-triangle__item.active > a::before {
-  background-image: url("../img/icon-up-active.svg");
+.type-sorting-triangle__item:active .type-sorting-triangle__icon,
+.type-sorting-triangle__item.active .type-sorting-triangle__icon {
+  fill: var(--light-blue);
 }
 
-.type-sorting-triangle__item:last-child > a::before {
+.type-sorting-triangle__icon.down {
   transform: rotate(180deg);
 }
 
