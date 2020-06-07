@@ -115,7 +115,7 @@ input[type = "checkbox"].visually-hidden {
 }
 
 .menu__item {
-  padding: 14px 0;
+  padding: 15px 0;
   width: 98px;
 }
 
@@ -541,8 +541,8 @@ input[type = "checkbox"].visually-hidden {
   font-weight: normal;
   display: flex;
   align-items: stretch;
-  padding-top: 28.5px;
-  padding-bottom: 31px;
+  padding-top: 26.5px;
+  padding-bottom: 34px;
 }
 
 .filter-form > fieldset {
@@ -733,8 +733,8 @@ input[type = "checkbox"].visually-hidden {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  padding-top: 18px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 21px;
 }
 
 .result-options__quantity {
@@ -843,7 +843,7 @@ input[type = "checkbox"].visually-hidden {
   margin: 0 auto;
   align-items: center;
   padding-top: 26px;
-  padding-bottom: 27px;
+  padding-bottom: 28.5px;;
 }
 
 .hotel__img {
@@ -857,8 +857,11 @@ input[type = "checkbox"].visually-hidden {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  color: var(--black, black);
   margin: 0 0 7px;
+}
+
+.hotel__title > a {
+  color: var(--black, black);
   text-decoration: none
 }
 
@@ -866,9 +869,11 @@ input[type = "checkbox"].visually-hidden {
 .hotel__title:focus {
   color: var(--light-blue);
 }
-.hotel__title:active{
+
+.hotel__title:active {
   color: rgba(var(--black-opacity), 0.3);
 }
+
 .hotel__info {
   margin-bottom: 14px;
   display: flex;
