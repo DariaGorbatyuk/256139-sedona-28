@@ -400,7 +400,7 @@ input[type = "checkbox"].visually-hidden {
   padding: 4px 0 6px 12px;
   background-color: var(--background-grey);
   text-transform: uppercase;
-  border: 0;
+  border: 2px solid transparent;
 }
 
 .form-search__data-inp:hover {
