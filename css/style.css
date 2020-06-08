@@ -1004,11 +1004,12 @@ input[type = "checkbox"].visually-hidden {
   font-size: 21px;
   line-height: 26px;
   color: var(--black, black);
-  padding-left: 88px;
+  padding-left: 73px;
 }
 
 .site-footer__contacts > p {
-  margin: 0 0 9px;
+  margin: 0 0 12px;
+  padding-left: 44px;
 }
 
 .site-footer__contacts > a {
@@ -1090,6 +1091,8 @@ input[type = "checkbox"].visually-hidden {
   margin: 0;
   display: flex;
   align-items: center;
+  justify-self: start;
+  padding-left: 65px;
   padding-top: 10px;
 }
 
