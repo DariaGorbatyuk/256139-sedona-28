@@ -72,17 +72,14 @@
         <fieldset class="filer-price">
           <legend class="filter-form__legend price">Стоимость в сутки (Р):</legend>
           <div class="filer-price__inputs">
-            <label class="filter-price-min">
-              <span class="visually-hidden">От</span>
-              <input class="filer-price__input min" type="text" name="filter-price-min"
-                     placeholder="От 0" pattern="[0-9]+$"
+            <label class="filter-price-label">
+              От <input class="filer-price__input min" type="text" name="filter-price-min"
+                     value="0" pattern="[0-9]+$"
                      required>
             </label>
-            <div class="filer-price__inputs-rect"></div>
-            <label class="filter-price-max">
-              <span class="visually-hidden">До</span>
-              <input class="filer-price__input max" type="text" name="filter-price-max"
-                     placeholder="До 3000" pattern="[0-9]+$"
+            <label class="filter-price-label">
+              До <input class="filer-price__input max" type="text" name="filter-price-max"
+                     value="3000" pattern="[0-9]+$"
                      required>
             </label>
 
@@ -96,7 +93,7 @@
             <button class="toggle toggle-min" type="button" style="
                 left: 0"></button>
             <button class="toggle toggle-max" type="button" style="
-            left: 78%"></button>
+            left: 79%"></button>
           </div>
           <button class="filter-form__submit" type="submit">Показать</button>
         </fieldset>
