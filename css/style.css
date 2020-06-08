@@ -624,7 +624,8 @@ input[type = "checkbox"].visually-hidden {
 .filter-price-label {
   width: 50%;
   position: relative;
-  text-align: center;
+  text-align: left;
+  padding-left: 59px;
 }
 
 .filer-price__inputs {
@@ -640,15 +641,11 @@ input[type = "checkbox"].visually-hidden {
 .filer-price__input {
   color: var(--background-white);
   font-weight: normal;
-  width: 10px;
+  width: 60px;
   background-color: transparent;
   padding: 0;
   margin: 0;
   border: 0;
-}
-
-.filer-price__input.max {
-  width: 30px;
 }
 
 .filter-price-label:nth-child(2)::before {
@@ -731,7 +728,7 @@ input[type = "checkbox"].visually-hidden {
   display: flex;
   align-items: center;
   border-bottom: 1px solid var(--grey-line);
-  padding: 15px 73px 21px 74px;
+  padding: 28px 73px 31px 74px;
 }
 
 .result-options__quantity {
@@ -791,8 +788,10 @@ input[type = "checkbox"].visually-hidden {
 .type-sorting__triangle {
   display: flex;
   justify-content: end;
+  margin: 0;
   margin-left: auto;
   padding: 0;
+  align-self: flex-end;
 }
 
 .type-sorting-triangle__item {
@@ -1100,7 +1099,7 @@ input[type = "checkbox"].visually-hidden {
   display: block;
   width: 115px;
   height: 41px;
-  margin-left: 11px;
+  margin-left: 10px;
 }
 
 .developer__logo {
