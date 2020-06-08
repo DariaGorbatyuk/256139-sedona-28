@@ -94,7 +94,7 @@ input[type = "checkbox"].visually-hidden {
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   margin: 0 auto;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
+  /*grid-template-rows: min-content 1fr min-content;*/
 }
 
 /*header*/
