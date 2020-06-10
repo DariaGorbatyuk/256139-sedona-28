@@ -31,7 +31,7 @@
   --btn-hover: #604E43;
   --btn-active: #503E33;
   --grey-black-text: #333333;
-  --checkBox-diasbles: #6A6A6A; /* Пока не использую-исправить*/
+  --checkBox-diasbles: #6A6A6A;
   --toggle: #ABABAB;
   --triangle-link: #cacaca;
   --black: #000000;
@@ -74,6 +74,7 @@ input[type = "checkbox"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -94,7 +95,7 @@ input[type = "checkbox"].visually-hidden {
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   margin: 0 auto;
   display: grid;
-  /*grid-template-rows: min-content 1fr min-content;*/
+  grid-template-rows: min-content 1fr min-content;
 }
 
 /*header*/
@@ -425,6 +426,16 @@ input[type = "checkbox"].visually-hidden {
   line-height: 26px;
   color: var(--black);
   align-self: center;
+}
+
+.form-search input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: var(--black);
+}
+
+.form-search input::-moz-placeholder {
+  font-weight: bold;
+  color: var(--black);
 }
 
 .form-search input::placeholder,
