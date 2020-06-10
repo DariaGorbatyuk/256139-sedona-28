@@ -175,7 +175,7 @@ input[type = "checkbox"].visually-hidden {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  margin: 0 auto 44px;
+  margin: 0 auto 43px;
 }
 
 /*advantages*/
@@ -186,13 +186,15 @@ input[type = "checkbox"].visually-hidden {
   text-align: center;
   margin: 0 0 51px;
 }
-
+.advantages{
+  margin-bottom: 56px;
+}
 .advantages__list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0 0 57px;
+  margin: 0;
 }
 
 .advantages-item {
@@ -204,6 +206,7 @@ input[type = "checkbox"].visually-hidden {
   background-color: var(--light-grey);
   padding-top: 47px;
   padding-bottom: 54px;
+  flex-grow: 1;
 }
 
 .advantages__item:first-child,
@@ -219,6 +222,7 @@ input[type = "checkbox"].visually-hidden {
 .advantages-item__img {
   width: 800px;
   height: 256px;
+  background-color: var(--brown-grey);
 }
 
 .advantages-item__heading {
@@ -421,7 +425,8 @@ input[type = "checkbox"].visually-hidden {
   align-self: center;
 }
 
-.form-search input::placeholder {
+.form-search input::placeholder,
+.form-search input {
   font-weight: bold;
   color: var(--black);
 }
@@ -564,6 +569,7 @@ input[type = "checkbox"].visually-hidden {
 
 .filter-form__legend.price {
   margin-bottom: 10px;
+  padding-left: 10px;
 }
 
 .filter__list {
@@ -618,9 +624,10 @@ input[type = "checkbox"].visually-hidden {
   margin-right: 72px;
   margin-left: auto;
   flex-basis: 327px;
+}
+.filer-price-wrapper{
   padding-left: 10px;
 }
-
 .filter-price-label {
   width: 50%;
   position: relative;
@@ -708,13 +715,14 @@ input[type = "checkbox"].visually-hidden {
 
 .filter-form__submit {
   width: 137px;
+  display: block;
   font-weight: normal;
   color: var(--background-white);
   text-transform: uppercase;
   background-color: transparent;
   border: 2px solid #FFFFFF;
-  margin-left: 84px;
   padding: 8px 0;
+  margin: 0 auto;
 }
 
 .filter-form__submit:hover {
@@ -1028,7 +1036,7 @@ input[type = "checkbox"].visually-hidden {
   list-style: none;
   margin: 0;
   display: flex;
-  padding: 8px 0 0;
+  padding: 11px 0 0;
 }
 
 .social__item {
@@ -1092,7 +1100,7 @@ input[type = "checkbox"].visually-hidden {
   align-items: center;
   justify-self: start;
   padding-left: 65px;
-  padding-top: 10px;
+  padding-top: 14px;
 }
 
 .developer__link {

@@ -71,29 +71,30 @@
         </fieldset>
         <fieldset class="filer-price">
           <legend class="filter-form__legend price">Стоимость в сутки (Р):</legend>
-          <div class="filer-price__inputs">
-            <label class="filter-price-label">
-              От <input class="filer-price__input min" type="text" name="filter-price-min"
-                     value="0" pattern="[0-9]+$"
-                     required>
-            </label>
-            <label class="filter-price-label">
-              До <input class="filer-price__input max" type="text" name="filter-price-max"
-                     value="3000" pattern="[0-9]+$"
-                     required>
-            </label>
-
-          </div>
-          <div class="range-filter">
-            <div class="scale">
-              <div class="bar" style="
+          <div class="filer-price-wrapper">
+            <div class="filer-price__inputs">
+              <label class="filter-price-label">
+                От <input class="filer-price__input min" type="text" name="filter-price-min"
+                          value="0" pattern="[0-9]+$"
+                          required>
+              </label>
+              <label class="filter-price-label">
+                До <input class="filer-price__input max" type="text" name="filter-price-max"
+                          value="3000" pattern="[0-9]+$"
+                          required>
+              </label>
+            </div>
+            <div class="range-filter">
+              <div class="scale">
+                <div class="bar" style="
                 width: 85%;
                 "></div>
-            </div>
-            <button class="toggle toggle-min" type="button" style="
+              </div>
+              <button class="toggle toggle-min" type="button" style="
                 left: 0"></button>
-            <button class="toggle toggle-max" type="button" style="
+              <button class="toggle toggle-max" type="button" style="
             left: 79%"></button>
+            </div>
           </div>
           <button class="filter-form__submit" type="submit">Показать</button>
         </fieldset>
@@ -170,7 +171,7 @@
             </figure>
             <div class="hotel__desc">
               <h3 class="hotel__title">
-                <a  href="blank.html">Desert Quail Inn</a>
+                <a href="blank.html">Desert Quail Inn</a>
               </h3>
               <div class="hotel__info">
                 <p class="hotel__type">Мотель</p>
@@ -199,7 +200,7 @@
             </figure>
             <div class="hotel__desc">
               <h3 class="hotel__title">
-                <a  href="blank.html">Villas at Poco Diablo</a>
+                <a href="blank.html">Villas at Poco Diablo</a>
               </h3>
               <div class="hotel__info">
                 <p class="hotel__type">Апартаменты</p>
