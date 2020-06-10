@@ -186,9 +186,11 @@ input[type = "checkbox"].visually-hidden {
   text-align: center;
   margin: 0 0 51px;
 }
-.advantages{
+
+.advantages {
   margin-bottom: 56px;
 }
+
 .advantages__list {
   list-style: none;
   display: flex;
@@ -625,9 +627,11 @@ input[type = "checkbox"].visually-hidden {
   margin-left: auto;
   flex-basis: 327px;
 }
-.filer-price-wrapper{
+
+.filer-price-wrapper {
   padding-left: 10px;
 }
+
 .filter-price-label {
   width: 50%;
   position: relative;
@@ -856,6 +860,10 @@ input[type = "checkbox"].visually-hidden {
   margin: 4px 29px 0 0;
 }
 
+.hotel__desc {
+  flex-basis: 600px;
+}
+
 .hotel__title {
   font-weight: bold;
   font-size: 21px;
@@ -865,7 +873,7 @@ input[type = "checkbox"].visually-hidden {
 
 .hotel__title > a {
   color: var(--black, black);
-  text-decoration: none
+  text-decoration: none;
 }
 
 .hotel__title:hover a,
@@ -880,21 +888,26 @@ input[type = "checkbox"].visually-hidden {
 .hotel__info {
   margin-bottom: 15px;
   display: flex;
+  flex-basis: 600px;
+  flex-wrap: wrap;
 }
 
 .hotel__type {
-  min-width: 110px;
+  flex-basis: 110px;
   font-weight: normal;
   margin: 0 6px 0 0;
 }
 
 .hotel__price {
   font-weight: normal;
+  flex-basis: 110px;
   margin: 0;
 }
 
 .hotel__links {
   display: flex;
+  flex-wrap: wrap;
+  flex-basis: 600px;
 }
 
 .hotel__btn {
