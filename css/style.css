@@ -606,7 +606,7 @@ input[type = "checkbox"].visually-hidden {
   padding-bottom: 0;
 }
 
-.filter__check-label:before {
+.filter__check + .filter__check-label:before {
   content: "";
   display: block;
   position: absolute;
@@ -619,11 +619,21 @@ input[type = "checkbox"].visually-hidden {
   left: 0;
 }
 
+.filter__check:focus + .filter__check-label:before,
+.filter__check:hover + .filter__check-label:before{
+  background-image: url("../img/checkbox-off-focus.svg");
+}
+
 .filter__check:checked + .filter__check-label:before {
   background-image: url("../img/checkbox-on.svg");
   background-size: 27px 23px;
   width: 27px;
   height: 23px;
+}
+
+.filter__check:checked:focus + .filter__check-label:before,
+.filter__check:checked:hover + .filter__check-label:before{
+  background-image: url("../img/checkbox-on-focus.svg");
 }
 
 .filter__check:disabled + .filter__check-label:before {
