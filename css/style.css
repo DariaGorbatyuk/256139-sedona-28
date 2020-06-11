@@ -31,7 +31,6 @@
   --btn-hover: #604E43;
   --btn-active: #503E33;
   --grey-black-text: #333333;
-  --checkBox-diasbles: #6A6A6A;
   --toggle: #ABABAB;
   --triangle-link: #cacaca;
   --black: #000000;
@@ -110,20 +109,15 @@ input[type = "checkbox"].visually-hidden {
 
 .menu {
   list-style: none;
-  width: 1054px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0;
+  padding: 0 73px;
 }
 
 .menu__item {
   padding: 15px 0;
-  width: 98px;
-}
-
-.menu__item:first-child {
-  margin-right: 130px;
+  width: 229px;
 }
 
 .menu__item.left-side {
@@ -134,9 +128,8 @@ input[type = "checkbox"].visually-hidden {
   text-align: right;
 }
 
-.menu__item.left-side + .menu__item.right-side {
-  margin-left: auto;
-  margin-right: 128px;
+.menu__item:nth-child(4n+2) {
+  margin-right: auto;
 }
 
 .menu__link {
@@ -669,10 +662,12 @@ input[type = "checkbox"].visually-hidden {
   position: relative;
   text-align: left;
 }
-.filter-price-label:first-child{
+
+.filter-price-label:first-child {
   padding-left: 65px;
 }
-.filter-price-label:last-child{
+
+.filter-price-label:last-child {
   padding-left: 54px;
 }
 
