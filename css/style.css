@@ -668,7 +668,12 @@ input[type = "checkbox"].visually-hidden {
   width: 50%;
   position: relative;
   text-align: left;
-  padding-left: 59px;
+}
+.filter-price-label:first-child{
+  padding-left: 65px;
+}
+.filter-price-label:last-child{
+  padding-left: 54px;
 }
 
 .filer-price__inputs {
