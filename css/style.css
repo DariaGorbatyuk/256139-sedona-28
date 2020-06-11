@@ -365,7 +365,9 @@ input[type = "checkbox"].visually-hidden {
   font-weight: bold;
   font-size: 21px;
   text-transform: uppercase;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
 }
 
@@ -398,6 +400,7 @@ input[type = "checkbox"].visually-hidden {
 .form-search__row {
   flex-basis: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
   margin-bottom: 29px;
@@ -470,6 +473,7 @@ input[type = "checkbox"].visually-hidden {
 
 .form-search__columns {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex-basis: 100%;
   justify-content: space-between;
@@ -479,11 +483,13 @@ input[type = "checkbox"].visually-hidden {
 .form-search__column-1,
 .form-search__column-2 {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .search-groupAdults__layout,
 .search-groupChildren__layout {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .search-groupAdults {
@@ -534,6 +540,10 @@ input[type = "checkbox"].visually-hidden {
   font-weight: bold;
   font-size: 21px;
   text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-search__submit:hover,
@@ -560,6 +570,7 @@ input[type = "checkbox"].visually-hidden {
   color: var(--background-white);
   font-weight: normal;
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
   padding-top: 26.5px;
   padding-bottom: 33px;
@@ -664,6 +675,7 @@ input[type = "checkbox"].visually-hidden {
 
 .filer-price__inputs {
   display: flex;
+  flex-wrap: wrap;
   background-color: transparent;
   color: var(--background-white);
   font-weight: normal;
@@ -761,6 +773,7 @@ input[type = "checkbox"].visually-hidden {
 
 .filter-result__options {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   border-bottom: 1px solid var(--grey-line);
   padding: 28px 73px 31px 74px;
@@ -785,6 +798,7 @@ input[type = "checkbox"].visually-hidden {
 .type-sorting {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -822,6 +836,7 @@ input[type = "checkbox"].visually-hidden {
 
 .type-sorting__triangle {
   display: flex;
+  flex-wrap: wrap;
   justify-content: end;
   margin: 0;
   margin-left: auto;
@@ -911,8 +926,8 @@ input[type = "checkbox"].visually-hidden {
 .hotel__info {
   margin-bottom: 15px;
   display: flex;
-  flex-basis: 600px;
   flex-wrap: wrap;
+  flex-basis: 600px;
 }
 
 .hotel__type {
@@ -976,6 +991,7 @@ input[type = "checkbox"].visually-hidden {
 .hotel__all-rating {
   margin-left: auto;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-self: stretch;
   padding-top: 4px;
@@ -984,6 +1000,7 @@ input[type = "checkbox"].visually-hidden {
 .hotels__stars {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   align-self: flex-end
 }
@@ -1134,6 +1151,7 @@ input[type = "checkbox"].visually-hidden {
   line-height: 26px;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-self: start;
   padding-left: 65px;
