@@ -91,6 +91,7 @@ input[type = "checkbox"].visually-hidden {
 
 .wrapper {
   width: 1200px;
+  min-height: 100vh;
   background-color: var(--background-white);
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   margin: 0 auto;
