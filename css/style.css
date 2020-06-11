@@ -923,12 +923,12 @@ input[type = "checkbox"].visually-hidden {
   text-decoration: none;
 }
 
-.hotel__title:hover a,
-.hotel__title:focus a {
+.hotel__title a:hover,
+.hotel__title a:focus {
   color: var(--light-blue);
 }
 
-.hotel__title:active a {
+.hotel__title a:active {
   color: rgba(var(--black-opacity), 0.3);
 }
 
