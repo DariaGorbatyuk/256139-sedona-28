@@ -112,6 +112,7 @@ input[type = "checkbox"].visually-hidden {
   list-style: none;
   width: 1054px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0;
 }
