@@ -120,11 +120,13 @@ input[type = "checkbox"].visually-hidden {
   width: 229px;
 }
 
-.menu__item.left-side {
+.menu__item:nth-child(4n+1),
+.menu__item:nth-child(4n+2) {
   text-align: left;
 }
 
-.menu__item.right-side {
+.menu__item:nth-child(4n+3),
+.menu__item:nth-child(4n+4){
   text-align: right;
 }
 
