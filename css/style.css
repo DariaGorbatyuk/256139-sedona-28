@@ -1058,7 +1058,7 @@ input[type = "checkbox"].visually-hidden {
   align-items: center;
   justify-items: center;
   padding-top: 23px;
-  padding-bottom: 36px;
+  padding-bottom: 32px;
 }
 
 .site-footer {
@@ -1074,12 +1074,14 @@ input[type = "checkbox"].visually-hidden {
 }
 
 .site-footer__contacts > p {
-  margin: 0 0 12px;
+  margin: 0 0 9px;
   padding-left: 44px;
 }
 
 .site-footer__contacts > a {
   color: var(--black, black);
+  display: block;
+  margin-bottom: 5px;
 }
 
 .site-footer__contacts > a:hover,
@@ -1101,6 +1103,7 @@ input[type = "checkbox"].visually-hidden {
 
 .social__item {
   margin-right: 6px;
+  margin-bottom: 5px;
 }
 
 .social__item:last-child {
@@ -1161,14 +1164,15 @@ input[type = "checkbox"].visually-hidden {
   align-items: center;
   justify-self: start;
   padding-left: 65px;
-  padding-top: 14px;
+  padding-top: 9px;
 }
 
 .developer__link {
   display: block;
   width: 115px;
   height: 41px;
-  margin-left: 10px;
+  margin-left: 8px;
+  margin-bottom: 5px;
 }
 
 .developer__logo {
