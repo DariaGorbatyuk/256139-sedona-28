@@ -379,6 +379,7 @@ input[type = "checkbox"].visually-hidden {
 /*Form-search*/
 .form-search {
   position: absolute;
+  z-index: 4;
   width: 568px;
   margin: 0 auto;
   background-color: var(--background-white);
@@ -1049,8 +1050,12 @@ input[type = "checkbox"].visually-hidden {
   background-repeat: no-repeat;
   display: grid;
   align-items: end;
+  position: relative;
 }
-
+.site-footer.map > .site-footer__content{
+  position: absolute;
+  bottom: 0;
+}
 .site-footer__content {
   background-color: rgba(var(--white-opacity), 0.9);
   display: grid;
