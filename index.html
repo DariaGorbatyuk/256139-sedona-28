@@ -98,6 +98,7 @@
       <p class="search-hotels__subtitle">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие
         предложения гостиниц в&nbsp;седоне</p>
       <button class="search-hotels__btn" type="button">Поиск гостиницы в Седоне</button>
+
       <form class="form-search" action="https://echo.htmlacademy.ru" method="get">
         <div class="form-search__row">
           <label for="search-check-in">Дата заезда:</label>
@@ -138,7 +139,7 @@
                 </svg>
               </button>
               <input class="group-adults-inp" id="search-group-adults" type="text" name="group-adults" value="2"
-                     required>
+                     pattern="^[0-9]\d*$" required>
               <button class="form-search__math-btn form-search__plus" type="button" aria-label="Увеличить">
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
@@ -157,7 +158,7 @@
                 </svg>
               </button>
               <input class="group-children-inp" id="search-group-children" type="text" name="group-children"
-                     value="0" required>
+                     value="0" pattern="^[0-9]\d*$" required>
               <button class="form-search__math-btn form-search__plus" type="button" aria-label="Увеличить">
                 <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
