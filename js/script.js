@@ -24,6 +24,8 @@ btnOpenForm.addEventListener('click', function(){
       inpAdult.value = storageAdult;
       inpChildren.value = storageChildren;
     }
+  }else{
+    form.classList.remove("error");
   }
 });
 
