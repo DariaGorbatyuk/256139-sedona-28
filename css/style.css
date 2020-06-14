@@ -395,6 +395,8 @@ input[type = "checkbox"].visually-hidden {
     opacity: 1;
   }
 }
+
+
 @keyframes shake {
   0%,
   100% {
@@ -426,7 +428,7 @@ input[type = "checkbox"].visually-hidden {
   background-color: var(--background-white);
   display: flex;
   flex-wrap: wrap;
-  animation: show 0.8s;
+  animation: show 0.7s;
   justify-content: center;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   padding: 55px;
