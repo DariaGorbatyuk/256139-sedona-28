@@ -609,7 +609,7 @@ input[type = "checkbox"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  padding-top: 26.5px;
+  padding-top: 26px;
   padding-left: 72px;
   padding-right: 72px;
 }
