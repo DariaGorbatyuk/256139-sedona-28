@@ -4,6 +4,10 @@ const inpData = document.querySelectorAll('.form-search__data-inp');
 const inpAdult = document.querySelector('.group-adults-inp');
 const inpChildren = document.querySelector('.group-children-inp');
 
+if (btnOpenForm){
+  form.classList.add('hide');
+}
+
 let isStorageSupport = true;
 let storageAdult = '';
 let storageChildren = '';
