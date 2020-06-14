@@ -387,6 +387,28 @@ input[type = "checkbox"].visually-hidden {
     transform: translateY(0);
   }
 }
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 
 .form-search {
   position: absolute;
@@ -407,6 +429,9 @@ input[type = "checkbox"].visually-hidden {
 
 .form-search.hide {
   display: none;
+}
+.form-search.error{
+  animation: shake 0.6s;
 }
 
 .form-search__row {

@@ -1,4 +1,3 @@
-'use strict';
 const btnOpenForm = document.querySelector('.search-hotels__btn');
 const form = document.querySelector('.form-search');
 const inpData = document.querySelectorAll('.form-search__data-inp');
@@ -29,9 +28,13 @@ btnOpenForm.addEventListener('click', function(){
 });
 
 form.addEventListener('submit', function(evt){
-   if (isStorageSupport){
+  if(!inpAdult.value || !inpChildren.value || !inpData[0].value || !inpData[1].value){
+    evt.preventDefault();
+    form.classList.remove("error");
+    form.offsetWidth = form.offsetWidth;
+    form.classList.add("error");
+  }else if (isStorageSupport){
      localStorage.setItem('amountAdult', inpAdult.value );
      localStorage.setItem('amountChildren', inpChildren.value);
    }
 });
-
