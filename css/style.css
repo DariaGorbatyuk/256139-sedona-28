@@ -352,6 +352,8 @@ input[type = "checkbox"].visually-hidden {
 }
 
 .search-hotels__btn {
+  position: relative;
+  z-index: 5;
   width: 568px;
   padding: 31px 0;
   border: 0;
@@ -379,12 +381,18 @@ input[type = "checkbox"].visually-hidden {
 /*Form-search*/
 /*Animations*/
 
-@keyframes slide {
+@keyframes show {
   0% {
-    transform: translateY(-247px);
+    transform: translateY(-100%);
+    opacity: 0;
   }
+  50%{
+     transform: translateY(-50%);
+     opacity:0
+   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 @keyframes shake {
@@ -418,7 +426,7 @@ input[type = "checkbox"].visually-hidden {
   background-color: var(--background-white);
   display: flex;
   flex-wrap: wrap;
-  animation: slide 0.9s;
+  animation: show 0.8s;
   justify-content: center;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   padding: 55px;
