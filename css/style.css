@@ -38,6 +38,7 @@
   --html-academy-link: #231F20;
   --html-academy-active: #BDBBBC;
   --raiting: #666666;
+  --red: #ff0000;
 }
 
 *, *::before, *::after {
@@ -619,7 +620,7 @@ input[type = "checkbox"].visually-hidden {
   color: rgba(var(--white-opacity), 0.3);
 }
 .inp-error{
-  outline: 2px solid red;
+  outline: 2px solid var(--red);
 }
 /*HOTELS*/
 .menu__link:not([href]) {

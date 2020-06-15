@@ -60,10 +60,3 @@ form.addEventListener('submit', function (evt) {
     }
   }
 });
-
-// else if (isStorageSupport) {
-//   localStorage.setItem('amountAdult', inpAdult.value);
-//   localStorage.setItem('amountChildren', inpChildren.value);
-// } else {
-//
-// }
