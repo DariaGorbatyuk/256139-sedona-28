@@ -564,6 +564,7 @@ input[type = "checkbox"].visually-hidden {
 
 .group-adults-inp,
 .group-children-inp {
+  position: relative;
   width: 38px;
   height: 38px;
   padding: 0 0 0 15px;
@@ -617,7 +618,9 @@ input[type = "checkbox"].visually-hidden {
   background-color: var(--socials-active);
   color: rgba(var(--white-opacity), 0.3);
 }
-
+.inp-error{
+  outline: 2px solid red;
+}
 /*HOTELS*/
 .menu__link:not([href]) {
   color: var(--brown-grey);
