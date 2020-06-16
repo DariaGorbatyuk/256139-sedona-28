@@ -1045,7 +1045,6 @@ input[type = "checkbox"].visually-hidden {
 }
 
 .hotel__type {
-  word-break: break-word;
   flex-basis: 110px;
   font-weight: normal;
   margin: 0 6px 0 0;
