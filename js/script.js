@@ -30,7 +30,7 @@ btnOpenForm.addEventListener('click', function () {
   form.classList.toggle('hide');
   if (!form.classList.contains('hide')) {
     inpData[0].focus();
-    if (isStorageSupport) {
+    if (isStorageSupport && storageAdult !== null && inpChildren !== null) {
       inpAdult.value = storageAdult;
       inpChildren.value = storageChildren;
     }
@@ -45,13 +45,13 @@ form.addEventListener('submit', function (evt) {
     form.classList.remove("error");
     form.offsetWidth = form.offsetWidth;
     form.classList.add("error");
-    inpArray.forEach( item =>{
+    inpArray.forEach(item => {
       item.classList.remove('inp-error');
     })
     form.offsetWidth = form.offsetWidth;
     inpArray.forEach(myFunction);
   } else {
-    inpArray.forEach( item =>{
+    inpArray.forEach(item => {
       item.classList.remove('inp-error');
     })
     if (isStorageSupport) {

@@ -418,34 +418,6 @@ input[type = "checkbox"].visually-hidden {
   }
 }
 
-@-webkit-keyframes hide {
-  0% {
-    transform: translateY(0);
-  }
-  40% {
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-}
-
-@keyframes hide {
-  0% {
-    transform: translateY(0);
-  }
-  40% {
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-}
-
 
 @-webkit-keyframes shake {
   0%,
@@ -512,9 +484,7 @@ input[type = "checkbox"].visually-hidden {
 }
 
 .form-search.hide {
-  -webkit-animation: hide 0.7s forwards;
-  animation: hide 0.7s forwards;
-  /*display: none;*/
+  display: none;
 }
 
 .form-search.error {
@@ -712,13 +682,14 @@ input[type = "checkbox"].visually-hidden {
   padding: 0;
   margin-right: 114px;
   margin-bottom: 33px;
+  max-width: 327px;
 }
 
 
 .filter-form__legend {
   font-weight: bold;
   font-size: 16px;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .filter-form__legend.price {
@@ -933,6 +904,7 @@ input[type = "checkbox"].visually-hidden {
   color: var(--black, black);
   margin: 0 40px 0 0;
   max-width: 112px;
+  padding-bottom: 3px;
 }
 
 .type-sorting {
@@ -942,10 +914,11 @@ input[type = "checkbox"].visually-hidden {
   max-width: 600px;
   margin: 0;
   padding: 0;
+  padding-bottom: 4px
 }
 
 .type-sorting__item {
-  margin-right: 32px;
+  margin-right: 33px;
 }
 
 .type-sorting__item:last-child {
@@ -1072,6 +1045,7 @@ input[type = "checkbox"].visually-hidden {
 }
 
 .hotel__type {
+  word-break: break-word;
   flex-basis: 110px;
   font-weight: normal;
   margin: 0 6px 0 0;
