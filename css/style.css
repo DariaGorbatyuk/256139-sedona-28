@@ -1126,7 +1126,6 @@ input[type = "checkbox"].visually-hidden {
 
 .hotels__stars > li:last-child {
   margin-right: 0;
-  /*  Не работает*/
 }
 
 .hotels__stars > li::before {
