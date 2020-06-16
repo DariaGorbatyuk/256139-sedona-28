@@ -336,6 +336,12 @@ input[type = "checkbox"].visually-hidden {
   position: relative;
 }
 
+.search-hotels-layout {
+  position: relative;
+  z-index: 5;
+  background-color: var(--background-white);
+}
+
 .search-hotels__heading {
   font-weight: bold;
   color: var(--black);
@@ -387,9 +393,9 @@ input[type = "checkbox"].visually-hidden {
     transform: translateY(-100%);
     opacity: 0;
   }
-  50%{
+  50% {
     transform: translateY(-50%);
-    opacity:0
+    opacity: 0
   }
   100% {
     transform: translateY(0);
@@ -402,9 +408,9 @@ input[type = "checkbox"].visually-hidden {
     transform: translateY(-100%);
     opacity: 0;
   }
-  50%{
+  50% {
     transform: translateY(-50%);
-    opacity:0
+    opacity: 0
   }
   100% {
     transform: translateY(0);
@@ -416,7 +422,7 @@ input[type = "checkbox"].visually-hidden {
   0% {
     transform: translateY(0);
   }
-  40%{
+  40% {
     opacity: 0;
   }
 
@@ -430,7 +436,7 @@ input[type = "checkbox"].visually-hidden {
   0% {
     transform: translateY(0);
   }
-  40%{
+  40% {
     opacity: 0;
   }
 
@@ -510,7 +516,8 @@ input[type = "checkbox"].visually-hidden {
   animation: hide 0.7s forwards;
   /*display: none;*/
 }
-.form-search.error{
+
+.form-search.error {
   -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
@@ -674,9 +681,11 @@ input[type = "checkbox"].visually-hidden {
   background-color: var(--socials-active);
   color: rgba(var(--white-opacity), 0.3);
 }
-.inp-error{
+
+.inp-error {
   outline: 2px solid var(--red);
 }
+
 /*HOTELS*/
 .menu__link:not([href]) {
   color: var(--brown-grey);
