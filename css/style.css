@@ -521,6 +521,7 @@ input[type = "checkbox"].visually-hidden {
 .form-search__data-inp:focus {
   background-color: var(--background-white);
   border: 2px solid var(--grey-line);
+  outline: none;
 }
 
 .form-search label {
