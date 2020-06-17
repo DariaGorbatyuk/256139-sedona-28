@@ -666,7 +666,7 @@ input[type = "checkbox"].visually-hidden {
 
 /*filter-form*/
 .filter-form {
-  background-color: var(--light-blue);
+  background-color: var(--brown-grey);
   background-image: url("../img/background-hotels.jpg");
   background-size: cover;
   background-repeat: no-repeat;
