@@ -542,6 +542,7 @@ input[type = "checkbox"].visually-hidden {
 .form-search input {
   font-weight: bold;
   color: var(--black);
+  opacity: 1;
 }
 
 .form-search__calendar-btn {
