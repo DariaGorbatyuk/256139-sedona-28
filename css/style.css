@@ -1177,13 +1177,17 @@ input[type = "checkbox"].visually-hidden {
 }
 
 .site-footer__content {
+  text-align: center;
+  justify-self: center;
   background-color: var(--background-white);
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: 327px 400px 327px;
   align-items: center;
   justify-items: center;
   padding-top: 23px;
   padding-bottom: 32px;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .site-footer__contacts {
@@ -1191,12 +1195,10 @@ input[type = "checkbox"].visually-hidden {
   font-size: 21px;
   line-height: 26px;
   color: var(--black, black);
-  padding-left: 73px;
 }
 
 .site-footer__contacts > p {
   margin: 0 0 9px;
-  padding-left: 44px;
 }
 
 .site-footer__contacts > a {
@@ -1283,8 +1285,6 @@ input[type = "checkbox"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-self: start;
-  padding-left: 65px;
   padding-top: 9px;
 }
 
