@@ -1158,6 +1158,9 @@ input[type = "checkbox"].visually-hidden {
   align-items: end;
   position: relative;
 }
+.site-footer.map iframe{
+  border: 0;
+}
 
 .site-footer.map > .site-footer__content {
   position: absolute;
