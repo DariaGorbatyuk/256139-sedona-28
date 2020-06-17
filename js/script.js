@@ -35,16 +35,16 @@ btnOpenForm.addEventListener('click', function () {
       inpChildren.value = storageChildren;
     }
   } else {
-    form.classList.remove("error");
+    form.classList.remove('error');
   }
 });
 
 form.addEventListener('submit', function (evt) {
   if (!inpAdult.value || !inpChildren.value || !inpData[0].value || !inpData[1].value) {
     evt.preventDefault();
-    form.classList.remove("error");
+    form.classList.remove('error');
     form.offsetWidth = form.offsetWidth;
-    form.classList.add("error");
+    form.classList.add('error');
     inpArray.forEach(item => {
       item.classList.remove('inp-error');
     })
