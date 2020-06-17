@@ -849,7 +849,7 @@ input[type = "checkbox"].visually-hidden {
 .range-filter .toggle:hover,
 .range-filter .toggle:focus,
 .range-filter .toggle:active {
-  transform: scale(1.3);
+  transform: scale(1.2);
 }
 
 .range-filter .toggle-min {
