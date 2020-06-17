@@ -100,7 +100,9 @@ input[type = "checkbox"].visually-hidden {
 }
 
 /*header*/
-
+.navigation{
+  position: relative;
+}
 .navigation__logo {
   position: absolute;
   top: 0;
