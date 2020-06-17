@@ -340,7 +340,7 @@ input[type = "checkbox"].visually-hidden {
 
 .search-hotels-layout {
   position: relative;
-  z-index: 5;
+  z-index: 3;
   background-color: var(--background-white);
 }
 
@@ -361,8 +361,6 @@ input[type = "checkbox"].visually-hidden {
 }
 
 .search-hotels__btn {
-  position: relative;
-  z-index: 5;
   width: 568px;
   padding: 31px 0;
   border: 0;
@@ -469,7 +467,7 @@ input[type = "checkbox"].visually-hidden {
 
 .form-search {
   position: absolute;
-  z-index: 4;
+  z-index: 2;
   width: 568px;
   margin: 0 auto;
   background-color: var(--background-white);
@@ -1151,21 +1149,27 @@ input[type = "checkbox"].visually-hidden {
 /*footer*/
 .site-footer.map {
   height: 594px;
-  background-color: var(--background-grey, lightgrey);
-  background-image: url("../img/map.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: grid;
   align-items: end;
   position: relative;
 }
 .site-footer.map iframe{
   border: 0;
+  z-index: 1;
+}
+
+.site-footer .map__img{
+  position: absolute;
+  z-index: 0;
+  background-color: var(--background-grey, lightgrey);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .site-footer.map > .site-footer__content {
   position: absolute;
+  z-index: 2;
   bottom: 0;
 }
 
