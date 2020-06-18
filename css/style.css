@@ -38,8 +38,7 @@
   --html-academy-link: #231F20;
   --html-academy-active: #BDBBBC;
   --raiting: #666666;
-  --wrapper-shadow: rgba(0, 1, 1, 0.2);
-  --form-shadow: rgba(0, 1, 1, 0.15);
+  --shadow: 0, 1, 1;
   --red: #ff0000;
 }
 
@@ -95,7 +94,7 @@ input[type = "checkbox"].visually-hidden {
   width: 1200px;
   min-height: 100vh;
   background-color: var(--background-white);
-  box-shadow: 0 5px 15px var(--wrapper-shadow);
+  box-shadow: 0 5px 15px rgba(var(--shadow), 0.2);
   margin: 0 auto;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -479,7 +478,7 @@ input[type = "checkbox"].visually-hidden {
   -webkit-animation: show 0.7s;
   animation: show 0.7s;
   justify-content: center;
-  box-shadow: 0 7px 15px var(--form-shadow);
+  box-shadow: 0 7px 15px rgba(var(--shadow), 0.15);
   padding: 55px;
   top: 100%;
   left: 0;
